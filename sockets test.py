@@ -19,6 +19,9 @@ def main():
     arduinoYun.connect((IP, PORT))
 
 def sendValue(key, value, spec = 0):
+    if key > 31 or value > 255 or spec > 3:
+        return False
+
     toSend = 0x0000
     toSend += key
     toSend <<= SPEC_SIZE
@@ -26,6 +29,5 @@ def sendValue(key, value, spec = 0):
     toSend <<= VALUE_SIZE
     toSend += value
 
-    print bin(toSend)
     buff = buffer(struct.pack(">H", toSend), 0, 2)
     arduinoYun.send(buff)
