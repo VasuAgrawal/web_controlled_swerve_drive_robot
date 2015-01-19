@@ -17,7 +17,7 @@ def doSwerveCalc((power, strafe, rotation)):
     C = power - rotation * (w/r)
     D = power + rotation * (w/r)
     (ws1, wa1) = (math.sqrt(B**2 + C**2), math.atan2(B,C) * 180/math.pi) #front right
-    (ws2, wa2) = (math.sqrt(B**2dd + D**2), math.atan2(B,D) * 180/math.pi) #front left
+    (ws2, wa2) = (math.sqrt(B**2 + D**2), math.atan2(B,D) * 180/math.pi) #front left
     (ws3, wa3) = (math.sqrt(A**2 + D**2), math.atan2(A,D) * 180/math.pi) #rear left
     (ws4, wa4) = (math.sqrt(A**2 + C**2), math.atan2(A,C) * 180/math.pi) #rear right
     maximum = max(float(max(ws1, ws2, ws3, ws4)), 1)

@@ -4,7 +4,6 @@ import struct
 # globals / macros
 IP = '192.168.240.1'
 PORT = 6666
-
 DRIVE_MOTOR_SPEED_KEY = 0
 DRIVE_MOTOR_DIR_KEY = 1
 STEER_MOTOR_POSITION_KEY = 2
@@ -21,11 +20,12 @@ def main():
 
 def sendValue(key, value, spec = 0):
     toSend = 0x0000
-    key <<= SPEC_SIZE
     toSend += key
-    spec <<= VALUE_SIZE
+    toSend <<= SPEC_SIZE
     toSend += spec
+    toSend <<= VALUE_SIZE
     toSend += value
+
     print bin(toSend)
-    buff = buffer(struct.pack("H", toSend), 0, 2)
+    buff = buffer(struct.pack(">H", toSend), 0, 2)
     arduinoYun.send(buff)
