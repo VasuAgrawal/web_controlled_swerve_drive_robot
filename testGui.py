@@ -4,6 +4,7 @@ from Tkinter import *
 import time
 import socket
 import struct
+import math
 
 class Connection(object):
     def __init__(self):
@@ -21,31 +22,34 @@ class Connection(object):
 
         self.arduinoYun = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         
+        print "TRYING TO CONNECT"
         while True:
             try:
                 self.arduinoYun.connect((self.IP, self.PORT))
+                print "SUCCESSFULLY CONNECTED"
                 break
             except:
                 continue
 
+    def clean(self):
+        self.arduinoYun.close()
 
-        def clean(self):
-            self.arduinoYun.close()
+    def sendValue(self, key, value, spec = 0):
+        if key > 31 or value > 255 or spec > 3:
+            return False
 
-        def sendValue(self, key, value, spec = 0):
-            if key > 31 or value > 255 or spec > 3:
-                return False
+        toSend = 0x0000
+        toSend += key
+        toSend <<= self.SPEC_SIZE
+        toSend += spec
+        toSend <<= self.VALUE_SIZE
+        toSend += value
 
-            toSend = 0x0000
-            toSend += key
-            toSend <<= SPEC_SIZE
-            toSend += spec
-            toSend <<= VALUE_SIZE
-            toSend += value
+        buff = buffer(struct.pack(">H", toSend), 0, 2)
 
-            buff = buffer(struct.pack(">H", toSend), 0, 2)
-            arduinoYun.send(buff) #sendall?
-            return True
+        print "Sending", value, "to", spec, "with key", key
+        self.arduinoYun.send(buff) #sendall?
+        return True
 
 class Robot(object):
     def __init__(self):
@@ -61,16 +65,19 @@ class Robot(object):
 
         self.handles = []
 
-        # self.robotConnection = Connection()
+        self.robotConnection = Connection()
 
-    def handleForward(self):
-        self.yVelocity += 0.5
-        self.checkMaxSpeed()
-    def handleBack(self): pass
-    def handleLeft(self): pass
-    def handleRight(self): pass 
-    def handleCW(self): pass
-    def handleCCW(self): pass
+        self.prevDrive = [-1, -1, -1, -1]
+        self.prevSteer = []
+
+    # def handleForward(self):
+    #     self.yVelocity += 0.5
+    #     self.checkMaxSpeed()
+    # def handleBack(self): pass
+    # def handleLeft(self): pass
+    # def handleRight(self): pass 
+    # def handleCW(self): pass
+    # def handleCCW(self): pass
     def pause(self):
         pass
 
@@ -100,35 +107,43 @@ class Robot(object):
 
     def tick(self, pressedKeys, timerDelay):
         if 'w' in pressedKeys: power = 1
-        else if 's' in pressedKeys: power = -1
+        elif 's' in pressedKeys: power = -1
         else: power = 0
 
         if 'd' in pressedKeys: strafe = 1
-        else if 'a' in pressedKeys: strafe = -1
+        elif 'a' in pressedKeys: strafe = -1
         else: strafe = 0
 
         if 'Right' in pressedKeys: rotation = 1
-        else if 'Left' in pressedKeys: rotation = -1
+        elif 'Left' in pressedKeys: rotation = -1
         else: rotation = 0
 
         drive, steer = self.doSwerveCalc(power, strafe, rotation)
 
-        if 'Space' in pressedKeys:
+        if 'space' in pressedKeys:
             self.sendValues(drive, steer)
+
+        self.prevDrive = drive
+        self.prevSteer = steer
 
     @staticmethod
     def rangeMap(num, oldMin, oldMax, newMin, newMax):
         return (float(num - oldMin)/ (oldMax - oldMin)) * (newMax - newMin) + newMin
 
     def sendValues(self, drive, steer):
+
+        # self.robotConnection.sendValue(self.robotConnection.DRIVE_MOTOR_DIR_KEY, 1, 0)
+        # self.robotConnection.sendValue(self.robotConnection.DRIVE_MOTOR_SPEED_KEY, 255, 0)
+
         #we'll worry about steer once potentiometers are applied
         maxDrive = 255
         # maxSteer = 125
-        mDrive = map(lambda n: int(Robot.rangeMap(n, 0, 1, 0, maxDrive)), drive)
-        # mSteer = map(lambda n: int(Robot.rangeMap(n, 0, 1, 0, maxSteer)), steer)
-        for i in xrange(len(mDrive)):
-            self.robotConnection.sendValues(self.robotConnection.DRIVE_MOTOR_SPEED_KEY, mDrive[i], i)
-            self.robotConnection.sendValues(self.robotConnection.DRIVE_MOTOR_DIR_KEY, 1, i)
+        for i in xrange(len(drive)):
+            # print drive[i], self.prevDrive[i]
+            # if drive[i] !=  self.prevDrive[i]:
+                val = int(Robot.rangeMap(drive[i], 0, 1, 0, maxDrive))
+                self.robotConnection.sendValue(self.robotConnection.DRIVE_MOTOR_DIR_KEY, 1, i)
+                self.robotConnection.sendValue(self.robotConnection.DRIVE_MOTOR_SPEED_KEY, val, i)
         # timerSeconds = timerDelay / 1000.0
         # self.xPos += (self.xVelocity * timerSeconds)
         # self.yPos += self.yVelocity * timerSeconds
@@ -162,7 +177,7 @@ class Gui(object):
         self.canvas = Canvas(self.root, width = 400, height = 400)
         self.canvas.pack()
         self.sparky = Robot()
-        self.timerDelay = 30 # ms
+        self.timerDelay = 500 # ms
         self.pressedKeys = {}
         self.lastPressTime = time.time()
 
@@ -186,7 +201,7 @@ class Gui(object):
             event.keysym == 'd' and 'a' not in self.pressedKeys or
             event.keysym == 'Right' and 'Left' not in self.pressedKeys or
             event.keysym == 'Left' and 'Right' not in self.pressedKeys or
-            event.keysym == 'Space'):
+            event.keysym == 'space'):
             self.pressedKeys[event.keysym] = time.time()
         # self.pressedKeys[event.keysym] = KeyData(event.time)
 
