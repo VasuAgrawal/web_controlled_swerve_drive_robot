@@ -164,12 +164,16 @@ void doUpdate(uint8_t key, uint8_t spec, uint8_t value){
       driveMotors[spec]->setSpeed(value);
       driveMotors[spec]->run(dir(driveMotorDirs[spec]));
       break;
-    // case STEER_MOTOR_DIR_KEY:
-    //   steerMotorDirs[spec] = value;
-    //   incrementalSteer();
-    // case STEER_MOTOR_POSITION_KEY:
-    //   steerMotorPositions[spec] = value;
-    //   incrementalSteer();borderlands
+    case STEER_MOTOR_DIR_KEY:
+      steerMotorDirs[spec] = value;
+      steerMotors[spec]->setSpeed(steerMotorPositions[spec]);
+      steerMotors[spec]->run(dir(value));
+      break;
+    case STEER_MOTOR_POSITION_KEY:
+      steerMotorPositions[spec] = value;
+      steerMotors[spec]->setSpeed(value);
+      steerMotors[spec]->run(dir(steerMotorDirs[spec]));
+      break;
   }
 
 }
