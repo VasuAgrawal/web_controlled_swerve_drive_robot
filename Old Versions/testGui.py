@@ -5,6 +5,7 @@ import time
 import socket
 import struct
 import math
+from lib import Gamepad
 
 class Connection(object):
     def __init__(self):
@@ -228,4 +229,4 @@ class Gui(object):
         self.timerEventHandler()
         self.root.mainloop()
 
-Gui().run()
+# Gui().run()
