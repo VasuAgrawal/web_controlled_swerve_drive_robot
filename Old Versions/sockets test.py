@@ -32,10 +32,17 @@ def sendValue(key, value, spec = 0):
     buff = buffer(struct.pack(">H", toSend), 0, 2)
     arduinoYun.send(buff)
 
-def allSteerForward(val):
+def allDriveForward(value):
     for i in xrange(4):
         sendValue(DRIVE_MOTOR_DIR_KEY, 1, i)
-        sendValue(DRIVE_MOTOR_SPEED_KEY, val, i)
+        sendValue(DRIVE_MOTOR_SPEED_KEY, value, i)
+
+def allStop():
     for i in xrange(4):
-        sendValue(STEER_MOTOR_DIR_KEY, 1, i)
-        sendValue(STEER_MOTOR_POSITION_KEY, val, i)
+        sendValue(DRIVE_MOTOR_DIR_KEY, 0, i)
+        sendValue(DRIVE_MOTOR_SPEED_KEY, 0, i)
+        sendValue(STEER_MOTOR_DIR_KEY, 0, i)
+        sendValue(STEER_MOTOR_POSITION_KEY, 0, i)
+    print "ALL STOPPED (hopefully)"
+
+main()

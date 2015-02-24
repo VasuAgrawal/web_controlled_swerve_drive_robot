@@ -17,28 +17,58 @@
 
 YunServer server(PORT);
 
-int8_t driveMotorSpeeds[] = {0, 0, 0, 0};
-int8_t driveMotorDirs[] = {0, 0, 0, 0};
-int8_t steerMotorPositions[] = {0, 0, 0, 0}; // this will be the home position
-int8_t steerMotorDirs[] = {0, 0, 0, 0}; // turning direction for wheels
-int8_t steerPotPins[] = {10, 15, 20, 25};
-
 Adafruit_MotorShield shield1 = Adafruit_MotorShield(0x60); // bottom shield
 Adafruit_MotorShield shield2 = Adafruit_MotorShield(0x61); // top shield
 
-Adafruit_DCMotor *driveMotors[4];
-Adafruit_DCMotor *steerMotors[4];
+struct module_assembly {
+  int8_t potPort;
+  int8_t steerShieldPort;
+  int8_t driveShieldPort;
+  int homeValue;
+  int8_t driveDir;
+  int8_t driveSpeed;
+  Adafruit_MotorShield shield;
+  Adafruit_DCMotor* driveMotor;
+  Adafruit_DCMotor* steerMotor;
+  double PIDInput;
+  double PIDOutput;
+  double PIDSetpoint;
+};
+typedef struct module_assembly module;
+
+module modules[4];
 
 void setup() {
-  driveMotors[0] = shield1.getMotor(2);
-  driveMotors[1] = shield1.getMotor(4);
-  driveMotors[2] = shield2.getMotor(2);
-  driveMotors[3] = shield2.getMotor(4);
+  modules[0].potPort = 0;
+  modules[0].steerShieldPort = 2;
+  modules[0].driveShieldPort = 1;
+  modules[0].homeValue = 450;
+  modules[0].shield = shield2; // 0x61;
 
-  steerMotors[0] = shield1.getMotor(1);
-  steerMotors[1] = shield1.getMotor(3);
-  steerMotors[2] = shield2.getMotor(1);
-  steerMotors[3] = shield2.getMotor(3);
+  modules[1].potPort = 1;
+  modules[1].steerShieldPort = 2;
+  modules[1].driveShieldPort = 1;
+  modules[1].homeValue = 500; // experimentally determined
+  modules[1].shield = shield1; // 0x60;
+
+  modules[2].potPort = 2;
+  modules[2].steerShieldPort = 3;
+  modules[2].driveShieldPort = 4;
+  modules[2].homeValue = 483;
+  modules[2].shield = shield1; // 0x60;
+
+  modules[3].potPort = 3;
+  modules[3].steerShieldPort = 3;
+  modules[3].driveShieldPort = 4;
+  modules[3].homeValue = 480;
+  modules[3].shield = shield2; // 0x61;
+
+  for(int i = 0; i < 4; i++){
+    modules[i].driveMotor = modules[i].shield.getMotor(modules[i].driveShieldPort);
+    modules[i].steerMotor = modules[i].shield.getMotor(modules[i].steerShieldPort);
+    modules[i].driveDir = 0;
+    modules[i].driveSpeed = 0;
+  }
 
   shield1.begin();
   shield2.begin();
@@ -52,6 +82,7 @@ void setup() {
 }
 
 void loop() {
+  Serial.println("Current Version: .50");
   YunClient remote = server.accept();
 
   if(remote.connected()){
@@ -89,7 +120,6 @@ void loop() {
           uint8_t value = findValue(data);
           
           doUpdate(key, spec, value);
-          remoteWrite();
 
           data = 0; // clears the data to be updated for next time
           numRecv = 0; // resets the numRecv counter
@@ -102,7 +132,6 @@ void loop() {
     }
     // shouldn't get here until the client terminates
     remote.stop();
-
   }
 
   else {
@@ -110,7 +139,6 @@ void loop() {
   }
 
   delay(1000);
-
 }
 
 uint8_t findKey(unsigned short data){
@@ -155,34 +183,22 @@ void doUpdate(uint8_t key, uint8_t spec, uint8_t value){
   switch(key){
     case DRIVE_MOTOR_DIR_KEY:
     // need to set the value in array, set set speed again, and set dir
-      driveMotorDirs[spec] = value;
-      driveMotors[spec]->setSpeed(driveMotorSpeeds[spec]);
-      driveMotors[spec]->run(dir(value));
+      modules[spec].driveDir = value;
+      modules[spec].driveMotor->setSpeed(modules[spec].driveSpeed);
+      modules[spec].driveMotor->run(dir(modules[spec].driveDir));
       break;
     case DRIVE_MOTOR_SPEED_KEY:
-      driveMotorSpeeds[spec] = value;
-      driveMotors[spec]->setSpeed(value);
-      driveMotors[spec]->run(dir(driveMotorDirs[spec]));
+      modules[spec].driveSpeed = value;
+      modules[spec].driveMotor->setSpeed(modules[spec].driveSpeed);
+      modules[spec].driveMotor->run(dir(modules[spec].driveDir));
       break;
     case STEER_MOTOR_DIR_KEY:
-      steerMotorDirs[spec] = value;
-      steerMotors[spec]->setSpeed(steerMotorPositions[spec]);
-      steerMotors[spec]->run(dir(value));
       break;
     case STEER_MOTOR_POSITION_KEY:
-      steerMotorPositions[spec] = value;
-      steerMotors[spec]->setSpeed(value);
-      steerMotors[spec]->run(dir(steerMotorDirs[spec]));
       break;
   }
-
 }
 
-void incrementalSteer(uint8_t spec, uint8_t position){
+int getPotPosition(uint8_t spec){
+  return analogRead(modules[spec].potPort);
 }
-
-void getPotPosition(uint8_t spec){
-  int position = map(analogRead(steerPotPins[spec]), 0, 12, -90, 90);
-}
-
-void remoteWrite() {}
