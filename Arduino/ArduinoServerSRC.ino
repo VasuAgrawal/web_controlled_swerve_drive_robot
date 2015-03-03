@@ -33,34 +33,39 @@ struct module_assembly {
   double PIDInput;
   double PIDOutput;
   double PIDSetpoint;
+  PID steerPID;
 };
 typedef struct module_assembly module;
 
 module modules[4];
 
+int analogReadShift(port){
+  return analogRead(port) / 4;
+}
+
 void setup() {
   modules[0].potPort = 0;
   modules[0].steerShieldPort = 2;
   modules[0].driveShieldPort = 1;
-  modules[0].homeValue = 450;
+  modules[0].homeValue = 450 / 4;
   modules[0].shield = shield2; // 0x61;
 
   modules[1].potPort = 1;
   modules[1].steerShieldPort = 2;
   modules[1].driveShieldPort = 1;
-  modules[1].homeValue = 500; // experimentally determined
+  modules[1].homeValue = 500 / 4; // experimentally determined
   modules[1].shield = shield1; // 0x60;
 
   modules[2].potPort = 2;
   modules[2].steerShieldPort = 3;
   modules[2].driveShieldPort = 4;
-  modules[2].homeValue = 483;
+  modules[2].homeValue = 483 / 4;
   modules[2].shield = shield1; // 0x60;
 
   modules[3].potPort = 3;
   modules[3].steerShieldPort = 3;
   modules[3].driveShieldPort = 4;
-  modules[3].homeValue = 480;
+  modules[3].homeValue = 480 / 4;
   modules[3].shield = shield2; // 0x61;
 
   for(int i = 0; i < 4; i++){
@@ -68,6 +73,14 @@ void setup() {
     modules[i].steerMotor = modules[i].shield.getMotor(modules[i].steerShieldPort);
     modules[i].driveDir = 0;
     modules[i].driveSpeed = 0;
+    modules[i].PIDInput = analogReadShift(modules[i].potPort);
+    modules[i].PIDOutput = 0;
+    modules[i].PIDSetpoint = homeValue;
+    modules[i].steerPID = PID(&modules[i].PIDInput, &modules[i].PIDOutput, &modules[i].PIDSetpoint,
+                              2, 0, 0, DIRECT);
+    modules[i].steerPID.SetMode(AUTOMATIC);
+    modules[i].stterPID.SetControllerDirection(DIRECT);
+    modules[i].SetOutputLimits(-128, 128); // limit to +/- 6V since we're using 12V rail
   }
 
   shield1.begin();
