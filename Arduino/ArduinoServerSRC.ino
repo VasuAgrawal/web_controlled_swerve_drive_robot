@@ -79,7 +79,7 @@ void setup() {
     modules[i].steerPID = PID(&modules[i].PIDInput, &modules[i].PIDOutput, &modules[i].PIDSetpoint,
                               2, 0, 0, DIRECT);
     modules[i].steerPID.SetMode(AUTOMATIC);
-    modules[i].stterPID.SetControllerDirection(DIRECT);
+    modules[i].steerPID.SetControllerDirection(DIRECT);
     modules[i].SetOutputLimits(-128, 128); // limit to +/- 6V since we're using 12V rail
   }
 
