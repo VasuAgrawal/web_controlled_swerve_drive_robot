@@ -1,0 +1,178 @@
+\hypertarget{structmodule__assembly}{}\section{module\+\_\+assembly Struct Reference}
+\label{structmodule__assembly}\index{module\+\_\+assembly@{module\+\_\+assembly}}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structmodule__assembly_a1039e3f38f5f3f999cbea725176a7658}{}int8\+\_\+t \hyperlink{structmodule__assembly_a1039e3f38f5f3f999cbea725176a7658}{pot\+\_\+port}\label{structmodule__assembly_a1039e3f38f5f3f999cbea725176a7658}
+
+\begin{DoxyCompactList}\small\item\em Arduino analog read port for the potentiometer \mbox{[}0, 6). \end{DoxyCompactList}\item 
+\hypertarget{structmodule__assembly_a9d333b50d42e0c2256eb5f186013442f}{}int8\+\_\+t \hyperlink{structmodule__assembly_a9d333b50d42e0c2256eb5f186013442f}{read\+\_\+reduce\+\_\+factor}\label{structmodule__assembly_a9d333b50d42e0c2256eb5f186013442f}
+
+\begin{DoxyCompactList}\small\item\em Factor by which to reduce analog read measurements for consistency. \end{DoxyCompactList}\item 
+\hypertarget{structmodule__assembly_a476413fbb41a8a90abc4a5a492383aac}{}int16\+\_\+t \hyperlink{structmodule__assembly_a476413fbb41a8a90abc4a5a492383aac}{read\+\_\+min\+\_\+value}\label{structmodule__assembly_a476413fbb41a8a90abc4a5a492383aac}
+
+\begin{DoxyCompactList}\small\item\em Inclusive minimum value for analog read by Arduino (ie 0). \end{DoxyCompactList}\item 
+\hypertarget{structmodule__assembly_a4cb502f2d8b3ad893eeb769090bc6a2c}{}int16\+\_\+t \hyperlink{structmodule__assembly_a4cb502f2d8b3ad893eeb769090bc6a2c}{read\+\_\+max\+\_\+value}\label{structmodule__assembly_a4cb502f2d8b3ad893eeb769090bc6a2c}
+
+\begin{DoxyCompactList}\small\item\em Exclusive maximum value for analog read by Arduino (ie 1024). \end{DoxyCompactList}\item 
+Adafruit\+\_\+\+Motor\+Shield $\ast$ \hyperlink{structmodule__assembly_a803c57702021d99f89c3b393aabf3a50}{shield}
+\begin{DoxyCompactList}\small\item\em Pointer to Adafruit motor shield where motors are attached. \end{DoxyCompactList}\item 
+\hypertarget{structmodule__assembly_a01a262a82104991c2c81db87c625ae8e}{}int8\+\_\+t \hyperlink{structmodule__assembly_a01a262a82104991c2c81db87c625ae8e}{steer\+\_\+port}\label{structmodule__assembly_a01a262a82104991c2c81db87c625ae8e}
+
+\begin{DoxyCompactList}\small\item\em Motor shield port that the steer motor is connected to. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{structmodule__assembly_a47838ac5150269f7889f38e62027fd23}{steer\+\_\+home\+\_\+value}
+\begin{DoxyCompactList}\small\item\em Potentiometer reading for steer home value. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{structmodule__assembly_a55a1e597e4e373ac95a03a32a65a2048}{steer\+\_\+min\+\_\+value}
+\begin{DoxyCompactList}\small\item\em Minimum safe potentiometer reading for the steering. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{structmodule__assembly_a1d3511864da30dc6c827959b5204c5a3}{steer\+\_\+max\+\_\+value}
+\begin{DoxyCompactList}\small\item\em Maximum safe potentiometer reading for the steering. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{structmodule__assembly_ac1ba4918f2a686b77c782e637a191348}{steer\+\_\+pos}
+\begin{DoxyCompactList}\small\item\em Desired position for the steer potentiometer to be in. \end{DoxyCompactList}\item 
+Adafruit\+\_\+\+D\+C\+Motor $\ast$ \hyperlink{structmodule__assembly_ace216696d34edd06eef0997f12c35771}{steer\+\_\+motor}
+\begin{DoxyCompactList}\small\item\em Adafruit\+\_\+\+D\+C\+Motor object for the steer motor. \end{DoxyCompactList}\item 
+P\+I\+D \hyperlink{structmodule__assembly_a2c3295e46bdfdacf68245649187688f8}{steer\+\_\+\+P\+I\+D}
+\begin{DoxyCompactList}\small\item\em P\+I\+D controller for the steering motor. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{structmodule__assembly_a4acd38bec79f8a8afcd4c4ec357569da}{P\+I\+D\+\_\+steer\+\_\+output}
+\begin{DoxyCompactList}\small\item\em P\+I\+D controller steer pos output. \end{DoxyCompactList}\item 
+\hypertarget{structmodule__assembly_a7ff07d4e2b6fcebb3f00adef7380e22a}{}int8\+\_\+t \hyperlink{structmodule__assembly_a7ff07d4e2b6fcebb3f00adef7380e22a}{drive\+\_\+port}\label{structmodule__assembly_a7ff07d4e2b6fcebb3f00adef7380e22a}
+
+\begin{DoxyCompactList}\small\item\em Motor shield port that the drive motor is connected to. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{structmodule__assembly_a4eaba2980fc35d71f1cc2ec15251cf15}{drive\+\_\+dir}
+\begin{DoxyCompactList}\small\item\em Direction in which to turn the motor. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{structmodule__assembly_a82019a65507cc9a23d7cdcff82adc20b}{drive\+\_\+speed}
+\begin{DoxyCompactList}\small\item\em Speed at which to turn the drive motor. \end{DoxyCompactList}\item 
+Adafuit\+\_\+\+D\+C\+Motor $\ast$ \hyperlink{structmodule__assembly_a1c4ce1de4be6b0d640e508245ac5f281}{drive\+\_\+motor}
+\begin{DoxyCompactList}\small\item\em Adafruit\+\_\+\+D\+C\+Motor object for the drive motor. \end{DoxyCompactList}\item 
+P\+I\+D \hyperlink{structmodule__assembly_ae46a075e88844adda6fd552f87f305c0}{drive\+\_\+\+P\+I\+D}
+\begin{DoxyCompactList}\small\item\em P\+I\+D controller for the drive motor. \end{DoxyCompactList}\item 
+int8\+\_\+t \hyperlink{structmodule__assembly_a987ebb08eef885c780ce16cb747ad4b8}{P\+I\+D\+\_\+drive\+\_\+output}
+\begin{DoxyCompactList}\small\item\em P\+I\+D controller drive speed output. \end{DoxyCompactList}\item 
+\hypertarget{structmodule__assembly_addb74ab561efcea659665a3f82daf31d}{}void($\ast$ \hyperlink{structmodule__assembly_addb74ab561efcea659665a3f82daf31d}{set\+\_\+steer\+\_\+pos} )(\hyperlink{structmodule__assembly}{module} $\ast$, int16\+\_\+t)\label{structmodule__assembly_addb74ab561efcea659665a3f82daf31d}
+
+\begin{DoxyCompactList}\small\item\em Function to set the steering position. \end{DoxyCompactList}\item 
+\hypertarget{structmodule__assembly_a9b5fb65d6b3dff348c59fbd8b1cf016a}{}void($\ast$ {\bfseries set\+\_\+drive\+\_\+dir} )(\hyperlink{structmodule__assembly}{module} $\ast$, int8\+\_\+t)\label{structmodule__assembly_a9b5fb65d6b3dff348c59fbd8b1cf016a}
+
+\item 
+\hypertarget{structmodule__assembly_a2b9f569a74bd58b94c4dfcd6b357766c}{}void($\ast$ {\bfseries set\+\_\+drive\+\_\+speed} )(\hyperlink{structmodule__assembly}{module} $\ast$, int8\+\_\+t)\label{structmodule__assembly_a2b9f569a74bd58b94c4dfcd6b357766c}
+
+\item 
+\hypertarget{structmodule__assembly_a80737be0fefbe26802d22311575178cc}{}void($\ast$ \hyperlink{structmodule__assembly_a80737be0fefbe26802d22311575178cc}{go\+\_\+home} )(\hyperlink{structmodule__assembly}{module} $\ast$)\label{structmodule__assembly_a80737be0fefbe26802d22311575178cc}
+
+\begin{DoxyCompactList}\small\item\em Sets the steering position to be the home position as specified. \end{DoxyCompactList}\item 
+\hypertarget{structmodule__assembly_a5822c3dd913339f91555c66671c7d959}{}void($\ast$ \hyperlink{structmodule__assembly_a5822c3dd913339f91555c66671c7d959}{stop\+\_\+driving} )(\hyperlink{structmodule__assembly}{module} $\ast$)\label{structmodule__assembly_a5822c3dd913339f91555c66671c7d959}
+
+\begin{DoxyCompactList}\small\item\em Sets the drive speed to be zero, and releases the motor. \end{DoxyCompactList}\item 
+\hypertarget{structmodule__assembly_acf7475b3f29ca0e782f1ba61c3f91e89}{}void($\ast$ \hyperlink{structmodule__assembly_acf7475b3f29ca0e782f1ba61c3f91e89}{error} )(\hyperlink{structmodule__assembly}{module} $\ast$)\label{structmodule__assembly_acf7475b3f29ca0e782f1ba61c3f91e89}
+
+\begin{DoxyCompactList}\small\item\em Called if any unsafe behavior, attempts to arrest all motion. \end{DoxyCompactList}\item 
+\hypertarget{structmodule__assembly_a1ca841fb37dd79a0180306b93f45ef76}{}bool($\ast$ {\bfseries safety\+\_\+check} )(\hyperlink{structmodule__assembly}{module} $\ast$)\label{structmodule__assembly_a1ca841fb37dd79a0180306b93f45ef76}
+
+\item 
+\hypertarget{structmodule__assembly_a5acad1911db4706aa0a24c13f0ef74e6}{}void($\ast$ \hyperlink{structmodule__assembly_a5acad1911db4706aa0a24c13f0ef74e6}{update} )(\hyperlink{structmodule__assembly}{module} $\ast$)\label{structmodule__assembly_a5acad1911db4706aa0a24c13f0ef74e6}
+
+\begin{DoxyCompactList}\small\item\em Does a P\+I\+D update, and sets new speeds of motor for next tick. \end{DoxyCompactList}\item 
+\hypertarget{structmodule__assembly_ae927c8ea866d3fe3fd4b13f33c585378}{}int16\+\_\+t($\ast$ \hyperlink{structmodule__assembly_ae927c8ea866d3fe3fd4b13f33c585378}{read\+\_\+steer\+\_\+pot\+\_\+by\+\_\+factor} )(\hyperlink{structmodule__assembly}{module} $\ast$)\label{structmodule__assembly_ae927c8ea866d3fe3fd4b13f33c585378}
+
+\begin{DoxyCompactList}\small\item\em Gets potentiometer reading, and divides by scale factor. \end{DoxyCompactList}\item 
+\hypertarget{structmodule__assembly_a8ca2a2c29b9fabeadc95b352bbf18817}{}int16\+\_\+t($\ast$ {\bfseries read\+\_\+steer\+\_\+pot} )(\hyperlink{structmodule__assembly}{module} $\ast$m)\label{structmodule__assembly_a8ca2a2c29b9fabeadc95b352bbf18817}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Field Documentation}
+\hypertarget{structmodule__assembly_a4eaba2980fc35d71f1cc2ec15251cf15}{}\index{module\+\_\+assembly@{module\+\_\+assembly}!drive\+\_\+dir@{drive\+\_\+dir}}
+\index{drive\+\_\+dir@{drive\+\_\+dir}!module\+\_\+assembly@{module\+\_\+assembly}}
+\subsubsection[{drive\+\_\+dir}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t module\+\_\+assembly\+::drive\+\_\+dir}\label{structmodule__assembly_a4eaba2980fc35d71f1cc2ec15251cf15}
+
+
+Direction in which to turn the motor. 
+
+drive\+\_\+dir $<$ 0 is B\+A\+C\+K\+W\+A\+R\+D. drive\+\_\+dir = 0 is N\+E\+U\+T\+R\+A\+L (R\+E\+L\+E\+A\+S\+E). drive\+\_\+dir $>$ 0 is F\+O\+R\+W\+A\+R\+D. Initially set to 0. \hypertarget{structmodule__assembly_a1c4ce1de4be6b0d640e508245ac5f281}{}\index{module\+\_\+assembly@{module\+\_\+assembly}!drive\+\_\+motor@{drive\+\_\+motor}}
+\index{drive\+\_\+motor@{drive\+\_\+motor}!module\+\_\+assembly@{module\+\_\+assembly}}
+\subsubsection[{drive\+\_\+motor}]{\setlength{\rightskip}{0pt plus 5cm}Adafuit\+\_\+\+D\+C\+Motor$\ast$ module\+\_\+assembly\+::drive\+\_\+motor}\label{structmodule__assembly_a1c4ce1de4be6b0d640e508245ac5f281}
+
+
+Adafruit\+\_\+\+D\+C\+Motor object for the drive motor. 
+
+Obtained automatically based on the given drive port and $\ast$shield. \hypertarget{structmodule__assembly_ae46a075e88844adda6fd552f87f305c0}{}\index{module\+\_\+assembly@{module\+\_\+assembly}!drive\+\_\+\+P\+I\+D@{drive\+\_\+\+P\+I\+D}}
+\index{drive\+\_\+\+P\+I\+D@{drive\+\_\+\+P\+I\+D}!module\+\_\+assembly@{module\+\_\+assembly}}
+\subsubsection[{drive\+\_\+\+P\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}P\+I\+D module\+\_\+assembly\+::drive\+\_\+\+P\+I\+D}\label{structmodule__assembly_ae46a075e88844adda6fd552f87f305c0}
+
+
+P\+I\+D controller for the drive motor. 
+
+Ensures that the drive motor will be going at the speed necessary. N\+O\+T Y\+E\+T I\+M\+P\+L\+E\+M\+E\+N\+T\+E\+D. \hypertarget{structmodule__assembly_a82019a65507cc9a23d7cdcff82adc20b}{}\index{module\+\_\+assembly@{module\+\_\+assembly}!drive\+\_\+speed@{drive\+\_\+speed}}
+\index{drive\+\_\+speed@{drive\+\_\+speed}!module\+\_\+assembly@{module\+\_\+assembly}}
+\subsubsection[{drive\+\_\+speed}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t module\+\_\+assembly\+::drive\+\_\+speed}\label{structmodule__assembly_a82019a65507cc9a23d7cdcff82adc20b}
+
+
+Speed at which to turn the drive motor. 
+
+drive\+\_\+speed $<$ 0 means go abs(drive\+\_\+speed) B\+A\+C\+K\+W\+A\+R\+D. drive\+\_\+speed = 0 means go abs(drive\+\_\+speed) N\+E\+U\+T\+R\+A\+L, so don\textquotesingle{}t move. drive\+\_\+speed $>$ 0 means go abs(drive\+\_\+\+Speed) F\+O\+R\+W\+A\+R\+D. Initially set to 0. \hypertarget{structmodule__assembly_a987ebb08eef885c780ce16cb747ad4b8}{}\index{module\+\_\+assembly@{module\+\_\+assembly}!P\+I\+D\+\_\+drive\+\_\+output@{P\+I\+D\+\_\+drive\+\_\+output}}
+\index{P\+I\+D\+\_\+drive\+\_\+output@{P\+I\+D\+\_\+drive\+\_\+output}!module\+\_\+assembly@{module\+\_\+assembly}}
+\subsubsection[{P\+I\+D\+\_\+drive\+\_\+output}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t module\+\_\+assembly\+::\+P\+I\+D\+\_\+drive\+\_\+output}\label{structmodule__assembly_a987ebb08eef885c780ce16cb747ad4b8}
+
+
+P\+I\+D controller drive speed output. 
+
+Holds the output value for drive speed from the P\+I\+D control loop. \hypertarget{structmodule__assembly_a4acd38bec79f8a8afcd4c4ec357569da}{}\index{module\+\_\+assembly@{module\+\_\+assembly}!P\+I\+D\+\_\+steer\+\_\+output@{P\+I\+D\+\_\+steer\+\_\+output}}
+\index{P\+I\+D\+\_\+steer\+\_\+output@{P\+I\+D\+\_\+steer\+\_\+output}!module\+\_\+assembly@{module\+\_\+assembly}}
+\subsubsection[{P\+I\+D\+\_\+steer\+\_\+output}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t module\+\_\+assembly\+::\+P\+I\+D\+\_\+steer\+\_\+output}\label{structmodule__assembly_a4acd38bec79f8a8afcd4c4ec357569da}
+
+
+P\+I\+D controller steer pos output. 
+
+Holds the output value for the steering position from the P\+I\+D loop. \hypertarget{structmodule__assembly_a803c57702021d99f89c3b393aabf3a50}{}\index{module\+\_\+assembly@{module\+\_\+assembly}!shield@{shield}}
+\index{shield@{shield}!module\+\_\+assembly@{module\+\_\+assembly}}
+\subsubsection[{shield}]{\setlength{\rightskip}{0pt plus 5cm}Adafruit\+\_\+\+Motor\+Shield$\ast$ module\+\_\+assembly\+::shield}\label{structmodule__assembly_a803c57702021d99f89c3b393aabf3a50}
+
+
+Pointer to Adafruit motor shield where motors are attached. 
+
+Both drive and steer motors must be atached to the same motor shield. \hypertarget{structmodule__assembly_a47838ac5150269f7889f38e62027fd23}{}\index{module\+\_\+assembly@{module\+\_\+assembly}!steer\+\_\+home\+\_\+value@{steer\+\_\+home\+\_\+value}}
+\index{steer\+\_\+home\+\_\+value@{steer\+\_\+home\+\_\+value}!module\+\_\+assembly@{module\+\_\+assembly}}
+\subsubsection[{steer\+\_\+home\+\_\+value}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t module\+\_\+assembly\+::steer\+\_\+home\+\_\+value}\label{structmodule__assembly_a47838ac5150269f7889f38e62027fd23}
+
+
+Potentiometer reading for steer home value. 
+
+Must be between \mbox{[}steer\+\_\+min\+\_\+value, steer\+\_\+max\+\_\+value). This will be the default value that the module will attempt to go initially, and if there is any problem with connection. \hypertarget{structmodule__assembly_a1d3511864da30dc6c827959b5204c5a3}{}\index{module\+\_\+assembly@{module\+\_\+assembly}!steer\+\_\+max\+\_\+value@{steer\+\_\+max\+\_\+value}}
+\index{steer\+\_\+max\+\_\+value@{steer\+\_\+max\+\_\+value}!module\+\_\+assembly@{module\+\_\+assembly}}
+\subsubsection[{steer\+\_\+max\+\_\+value}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t module\+\_\+assembly\+::steer\+\_\+max\+\_\+value}\label{structmodule__assembly_a1d3511864da30dc6c827959b5204c5a3}
+
+
+Maximum safe potentiometer reading for the steering. 
+
+Given between \mbox{[}read\+\_\+min\+\_\+value, read\+\_\+max\+\_\+value\mbox{]}. Make sure to ignore the read\+\_\+reduce\+\_\+factor; this is accounted for automatically. If this value is exceeded, error measures are taken to prevent damage. \hypertarget{structmodule__assembly_a55a1e597e4e373ac95a03a32a65a2048}{}\index{module\+\_\+assembly@{module\+\_\+assembly}!steer\+\_\+min\+\_\+value@{steer\+\_\+min\+\_\+value}}
+\index{steer\+\_\+min\+\_\+value@{steer\+\_\+min\+\_\+value}!module\+\_\+assembly@{module\+\_\+assembly}}
+\subsubsection[{steer\+\_\+min\+\_\+value}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t module\+\_\+assembly\+::steer\+\_\+min\+\_\+value}\label{structmodule__assembly_a55a1e597e4e373ac95a03a32a65a2048}
+
+
+Minimum safe potentiometer reading for the steering. 
+
+Given between \mbox{[}read\+\_\+min\+\_\+value, read\+\_\+max\+\_\+value). Make sure to ignore the read\+\_\+reduce\+\_\+factor; this is accounted for automatically. If this value is exceeded, error measures are taken to prevent damage. \hypertarget{structmodule__assembly_ace216696d34edd06eef0997f12c35771}{}\index{module\+\_\+assembly@{module\+\_\+assembly}!steer\+\_\+motor@{steer\+\_\+motor}}
+\index{steer\+\_\+motor@{steer\+\_\+motor}!module\+\_\+assembly@{module\+\_\+assembly}}
+\subsubsection[{steer\+\_\+motor}]{\setlength{\rightskip}{0pt plus 5cm}Adafruit\+\_\+\+D\+C\+Motor$\ast$ module\+\_\+assembly\+::steer\+\_\+motor}\label{structmodule__assembly_ace216696d34edd06eef0997f12c35771}
+
+
+Adafruit\+\_\+\+D\+C\+Motor object for the steer motor. 
+
+Obtained automatically based on the given steer\+\_\+port and $\ast$shield. \hypertarget{structmodule__assembly_a2c3295e46bdfdacf68245649187688f8}{}\index{module\+\_\+assembly@{module\+\_\+assembly}!steer\+\_\+\+P\+I\+D@{steer\+\_\+\+P\+I\+D}}
+\index{steer\+\_\+\+P\+I\+D@{steer\+\_\+\+P\+I\+D}!module\+\_\+assembly@{module\+\_\+assembly}}
+\subsubsection[{steer\+\_\+\+P\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}P\+I\+D module\+\_\+assembly\+::steer\+\_\+\+P\+I\+D}\label{structmodule__assembly_a2c3295e46bdfdacf68245649187688f8}
+
+
+P\+I\+D controller for the steering motor. 
+
+Ensures that steering motor will arrive at necesssary position. \hypertarget{structmodule__assembly_ac1ba4918f2a686b77c782e637a191348}{}\index{module\+\_\+assembly@{module\+\_\+assembly}!steer\+\_\+pos@{steer\+\_\+pos}}
+\index{steer\+\_\+pos@{steer\+\_\+pos}!module\+\_\+assembly@{module\+\_\+assembly}}
+\subsubsection[{steer\+\_\+pos}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t module\+\_\+assembly\+::steer\+\_\+pos}\label{structmodule__assembly_ac1ba4918f2a686b77c782e637a191348}
+
+
+Desired position for the steer potentiometer to be in. 
+
+Achieved using P\+I\+D, will attempt to restore to this position whenever possible. Will default to home value at start. Will be home value if a value outside provided safe range is given. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+module.\+c\end{DoxyCompactItemize}
