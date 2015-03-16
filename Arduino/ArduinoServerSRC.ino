@@ -205,7 +205,7 @@ void doUpdate(uint8_t key, uint8_t spec, uint8_t value){
       modules[spec].driveMotor->setSpeed(modules[spec].driveSpeed);
       modules[spec].driveMotor->run(dir(modules[spec].driveDir));
       break;
-    case STEER_MOTOR_DIR_KEY:
+    case STEER_MOTOR_DIR_KEY:`
       break;
     case STEER_MOTOR_POSITION_KEY:
       break;
