@@ -24,21 +24,21 @@ struct module_assembly {
     /**
      * Arduino analog read port for the potentiometer [0, 6). 
      */
-    int8_t pot_port;
+    uint8_t pot_port;
 
     /**
      * Factor by which to reduce analog read measurements for consistency.
      */
-    int8_t read_reduce_factor;
+    uint8_t read_reduce_factor;
 
     /**
      * Inclusive minimum value for analog read by Arduino (ie 0).
      */
-    int16_t read_min_value;
+    uint16_t read_min_value;
     /**
      * Exclusive maximum value for analog read by Arduino (ie 1024).
      */
-    int16_t read_max_value;
+    uint16_t read_max_value;
     
     /**
      * Pointer to Adafruit motor shield where motors are attached.
@@ -49,35 +49,36 @@ struct module_assembly {
     /**
      * Motor shield port that the steer motor is connected to.
      */
-    int8_t steer_port;
+    uint8_t steer_port;
+    
     /**
      * Potentiometer reading for steer home value.
      * Must be between [steer_min_value, steer_max_value). This will be the
      * default value that the module will attempt to go initially, and if
      * there is any problem with connection.
      */
-    int16_t steer_home_value;
+    uint16_t steer_home_value;
     /** 
      * Minimum safe potentiometer reading for the steering.
      * Given between [read_min_value, read_max_value). Make sure to ignore
      * the read_reduce_factor; this is accounted for automatically. If this
      * value is exceeded, error measures are taken to prevent damage.
      */
-    int16_t steer_min_value;
+    uint16_t steer_min_value;
     /** 
      * Maximum safe potentiometer reading for the steering.
      * Given between [read_min_value, read_max_value]. Make sure to ignore
      * the read_reduce_factor; this is accounted for automatically. If this
      * value is exceeded, error measures are taken to prevent damage.
      */
-    int16_t steer_max_value;
+    uint16_t steer_max_value;
     /**
      * Desired position for the steer potentiometer to be in.
      * Achieved using PID, will attempt to restore to this position whenever
      * possible. Will default to home value at start. Will be home value
      * if a value outside provided safe range is given.
      */
-    int16_t steer_pos; 
+    uint16_t steer_pos; 
     /**
      * Adafruit_DCMotor object for the steer motor.
      * Obtained automatically based on the given steer_port and *shield. 
@@ -98,7 +99,7 @@ struct module_assembly {
     /**
      * Motor shield port that the drive motor is connected to.
      */
-    int8_t drive_port;
+    uint8_t drive_port;
     /**
      * Direction in which to turn the motor.
      * drive_dir < 0 is BACKWARD.
@@ -108,13 +109,12 @@ struct module_assembly {
      */
     int8_t drive_dir;
     /**
-     * Speed at which to turn the drive motor.
-     * drive_speed < 0 means go abs(drive_speed) BACKWARD.
+     * Speed at which to turn the drive motor, based on drive_dir
      * drive_speed = 0 means go abs(drive_speed) NEUTRAL, so don't move.
      * drive_speed > 0 means go abs(drive_Speed) FORWARD.
      * Initially set to 0.
      */
-    int8_t drive_speed;
+    uint8_t drive_speed;
     /**
      * Adafruit_DCMotor object for the drive motor.
      * Obtained automatically based on the given drive port and *shield.
@@ -131,12 +131,12 @@ struct module_assembly {
      * PID controller drive speed output.
      * Holds the output value for drive speed from the PID control loop.
      */
-    int8_t PID_drive_output;
+    uint8_t PID_drive_output;
 
     /**
      * Function to set the steering position.
      */
-    void (*set_steer_pos)(module*, int16_t);
+    void (*set_steer_pos)(module*, uint16_t);
 
     /**
      * Sets the direction for the drive motor.
@@ -146,7 +146,7 @@ struct module_assembly {
     /**
      * Sets the speed for the drive motor.
      */
-    void (*set_drive_speed)(module*, int8_t);
+    void (*set_drive_speed)(module*, uint8_t);
 
     /**
      * Sets the steering position to be the home position as specified.
@@ -176,29 +176,29 @@ struct module_assembly {
     /**
      * Gets potentiometer reading, and divides by scale factor.
      */
-    int16_t (*read_steer_pot_by_factor)(module*);
+    uint16_t (*read_steer_pot_by_factor)(module*);
 
     /**
      * Gets raw potentiomter reading.
      */
-    int16_t (*read_steer_pot)(module *m);
+    uint16_t (*read_steer_pot)(module *m);
 };
 
 typedef struct module_assembly module;
 
-module module_init(int8_t pot_port, int8_t read_reduce_factor,
-    int16_t read_min_value, int16_t read_max_value,
-    Adafruit_MotorShield *shield, int8_t steer_port, int16_t steer_home_value,
-    int16_t steer_min_value, int16_t steer_max_value, int8_t drive_port);
-void set_steer_pos(module *m, int16_t steer_pos);
+module module_init(uint8_t pot_port, uint8_t read_reduce_factor,
+    uint16_t read_min_value, uint16_t read_max_value,
+    Adafruit_MotorShield *shield, uint8_t steer_port, uint16_t steer_home_value,
+    uint16_t steer_min_value, uint16_t steer_max_value, uint8_t drive_port);
+void set_steer_pos(module *m, uint16_t steer_pos);
 void set_drive_dir(module *m, int8_t drive_dir);
-void set_drive_speed(module *m, int8_t drive_speed);
+void set_drive_speed(module *m, uint8_t drive_speed);
 void go_home(module *m);
 void stop_driving(module *m);
 void error(module *m);
 bool safety_check(module *m);
 void update(module *m);
-int16_t read_steer_pot_by_factor(module *m);
-int16_t read_steer_pot(module *m);
+uint16_t read_steer_pot_by_factor(module *m);
+uint16_t read_steer_pot(module *m);
 
 #endif

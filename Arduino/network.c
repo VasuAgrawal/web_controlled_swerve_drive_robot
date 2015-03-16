@@ -1,4 +1,4 @@
-#include "network.h"
+#include <network.h>
 
 /**
  * Creates a new network object.

@@ -14,10 +14,10 @@
  * @param  drive_port         See struct definition.
  * @return                    Returns a module with initialized values.
  */
-module module_init(int8_t pot_port, int8_t read_reduce_factor,
-    int16_t read_min_value, int16_t read_max_value,
-    Adafruit_MotorShield *shield, int8_t steer_port, int16_t steer_home_value,
-    int16_t steer_min_value, int16_t steer_max_value, int8_t drive_port) {
+module module_init(uint8_t pot_port, uint8_t read_reduce_factor,
+    uint16_t read_min_value, uint16_t read_max_value,
+    Adafruit_MotorShield *shield, uint8_t steer_port, uint16_t steer_home_value,
+    uint16_t steer_min_value, uint16_t steer_max_value, uint8_t drive_port) {
     
     module m;
     //should probably add some sort of error checking for all of these values
@@ -56,7 +56,7 @@ module module_init(int8_t pot_port, int8_t read_reduce_factor,
  * @param m         this
  * @param steer_pos Steering position from [steer_min_value, steer_max_value)
  */
-void set_steer_pos(module *m, int16_t steer_pos) {
+void set_steer_pos(module *m, uint16_t steer_pos) {
     if (m->steer_min_value <= steer_pos && steer_pos < m->steer_max_value){
         m->steer_pos = steer_pos;
     } else {
@@ -68,7 +68,7 @@ void set_drive_dir(module *m, int8_t drive_dir) {
     m->drive_dir = drive_dir;
 }
 
-void set_drive_speed(module *m, int8_t drive_speed) {
+void set_drive_speed(module *m, uint8_t drive_speed) {
     m->drive_speed = drive_speed;
 }
 
@@ -139,10 +139,10 @@ void update(module *m) {
     }
 }
 
-int16_t read_steer_pot_by_factor(module *m) {
+uint16_t read_steer_pot_by_factor(module *m) {
     return analogRead(m->pot_port) / m->read_reduce_factor;
 }
 
-int16_t read_steer_pot(module *m) {
+uint16_t read_steer_pot(module *m) {
     return analogRead(m->pot_port);
 }
