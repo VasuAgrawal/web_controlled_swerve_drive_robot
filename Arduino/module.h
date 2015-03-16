@@ -138,8 +138,14 @@ struct module_assembly {
      */
     void (*set_steer_pos)(module*, int16_t);
 
+    /**
+     * Sets the direction for the drive motor.
+     */
     void (*set_drive_dir)(module*, int8_t);
 
+    /**
+     * Sets the speed for the drive motor.
+     */
     void (*set_drive_speed)(module*, int8_t);
 
     /**
@@ -157,6 +163,9 @@ struct module_assembly {
      */
     void (*error)(module*);
 
+    /**
+     * Checks to see whether module is within safe operational limit.
+     */
     bool (*safety_check)(module*);
 
     /**
@@ -169,6 +178,9 @@ struct module_assembly {
      */
     int16_t (*read_steer_pot_by_factor)(module*);
 
+    /**
+     * Gets raw potentiomter reading.
+     */
     int16_t (*read_steer_pot)(module *m);
 };
 
