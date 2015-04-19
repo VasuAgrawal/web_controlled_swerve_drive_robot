@@ -31,3 +31,9 @@ def sendValue(key, value, spec = 0):
 
     buff = buffer(struct.pack(">H", toSend), 0, 2)
     arduinoYun.send(buff)
+
+def sendAny(val):
+    buf = buffer(struct.pack("!B", val), 0, 1)
+    arduinoYun.send(buf)
+
+main()

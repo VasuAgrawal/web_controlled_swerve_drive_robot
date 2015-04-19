@@ -16,10 +16,11 @@
 #ifndef MODULE_H
 #define MODULE_H
 
-#include <Wire.h>
+//#include <Wire.h>
 #include <Adafruit_MotorShield.h>
 #include "utility/Adafruit_PWMServoDriver.h"
 
+typedef struct module_assembly module;
 struct module_assembly {
     /**
      * Arduino analog read port for the potentiometer [0, 6). 
@@ -88,7 +89,7 @@ struct module_assembly {
      * PID controller for the steering motor.
      * Ensures that steering motor will arrive at necesssary position.
      */
-    PID steer_PID;
+//    PID steer_PID;
 
     /**
      * PID controller steer pos output.
@@ -119,13 +120,13 @@ struct module_assembly {
      * Adafruit_DCMotor object for the drive motor.
      * Obtained automatically based on the given drive port and *shield.
      */
-    Adafuit_DCMotor* drive_motor;
+    Adafruit_DCMotor* drive_motor;
     /**
      * PID controller for the drive motor.
      * Ensures that the drive motor will be going at the speed necessary.
      * NOT YET IMPLEMENTED.
      */
-    PID drive_PID;
+//    PID drive_PID;
 
     /**
      * PID controller drive speed output.
@@ -184,9 +185,7 @@ struct module_assembly {
     uint16_t (*read_steer_pot)(module *m);
 };
 
-typedef struct module_assembly module;
-
-module module_init(uint8_t pot_port, uint8_t read_reduce_factor,
+module* module_init(uint8_t pot_port, uint8_t read_reduce_factor,
     uint16_t read_min_value, uint16_t read_max_value,
     Adafruit_MotorShield *shield, uint8_t steer_port, uint16_t steer_home_value,
     uint16_t steer_min_value, uint16_t steer_max_value, uint8_t drive_port);

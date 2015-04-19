@@ -17,11 +17,20 @@
 #include <YunClient.h>
 
 #define PORT 6666
-#define DRIVE_MOTOR_SPEED_KEY 0x10
-#define DRIVE_MOTOR_DIR_KEY 0x11
-#define STEER_MOTOR_POSITION_KEY 0x12
-#define STEER_MOTOR_DIR_KEY 0x13
+#define MODULE_0_DRIVE_MOTOR_SPD 0xF0
+#define MODULE_0_DRIVE_MOTOR_DIR 0xF1
+#define MODULE_0_STEER_MOTOR_POS 0xF2
+#define MODULE_1_DRIVE_MOTOR_SPD 0xF3
+#define MODULE_1_DRIVE_MOTOR_DIR 0xF4
+#define MODULE_1_STEER_MOTOR_POS 0xF5
+#define MODULE_2_DRIVE_MOTOR_SPD 0xF6
+#define MODULE_2_DRIVE_MOTOR_DIR 0xF7
+#define MODULE_2_STEER_MOTOR_POS 0xF8
+#define MODULE_3_DRIVE_MOTOR_SPD 0xF9
+#define MODULE_3_DRIVE_MOTOR_DIR 0xFA
+#define MODULE_3_STEER_MOTOR_POS 0xFB
 
+typedef struct network_module network;
 struct network_module {
     /**
      * Server object on the Yun's side.
@@ -90,11 +99,10 @@ struct network_module {
     void (*get_next)(network*);
 };
 
-typedef struct network_module network;
-
-bool connected(network *this);
-bool available(network *this);
-void accept(network *this);
-void get_next(network *this);
+network* network_init();
+bool connected(network *net);
+bool available(network *net);
+void accept(network *net);
+void get_next(network *net);
 
 #endif
