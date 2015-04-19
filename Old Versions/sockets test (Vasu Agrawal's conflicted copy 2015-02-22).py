@@ -36,4 +36,10 @@ def sendAny(val):
     buf = buffer(struct.pack("!B", val), 0, 1)
     arduinoYun.send(buf)
 
+def sendAny2(val, val2):
+    new = val << 8
+    new += val2
+    buf = buffer(struct.pack("!H", new), 0, 2)
+    arduinoYun.send(buf)
+
 main()
