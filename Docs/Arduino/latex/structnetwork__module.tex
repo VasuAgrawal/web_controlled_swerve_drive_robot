@@ -1,0 +1,76 @@
+\hypertarget{structnetwork__module}{}\section{network\+\_\+module Struct Reference}
+\label{structnetwork__module}\index{network\+\_\+module@{network\+\_\+module}}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+Yun\+Server \hyperlink{structnetwork__module_a82b787509d4348843a4831156866c57e}{server}
+\begin{DoxyCompactList}\small\item\em Server object on the Yun\textquotesingle{}s side. \end{DoxyCompactList}\item 
+Yun\+Client \hyperlink{structnetwork__module_a2422beb02be2c0bcef02bbbbc43252fe}{remote}
+\begin{DoxyCompactList}\small\item\em Remote client object, on the controller side. \end{DoxyCompactList}\item 
+bool \hyperlink{structnetwork__module_ac0b46ce8ff26aba526e40974b4658d5f}{data\+\_\+available}
+\begin{DoxyCompactList}\small\item\em Value showing whether or not a new data piece is available. \end{DoxyCompactList}\item 
+\hypertarget{structnetwork__module_ab9c0b475bf19d9e23331829d317b15ef}{}byte \hyperlink{structnetwork__module_ab9c0b475bf19d9e23331829d317b15ef}{key}\label{structnetwork__module_ab9c0b475bf19d9e23331829d317b15ef}
+
+\begin{DoxyCompactList}\small\item\em Key for the received data pair. \end{DoxyCompactList}\item 
+\hypertarget{structnetwork__module_afc265eebfd75124019486aba98219e20}{}byte \hyperlink{structnetwork__module_afc265eebfd75124019486aba98219e20}{value}\label{structnetwork__module_afc265eebfd75124019486aba98219e20}
+
+\begin{DoxyCompactList}\small\item\em Value for the received data pair. \end{DoxyCompactList}\item 
+bool \hyperlink{structnetwork__module_a4784db26a8a7efad337587b17c3528e5}{key\+\_\+received}
+\begin{DoxyCompactList}\small\item\em Whether or not a key has been received. \end{DoxyCompactList}\item 
+bool \hyperlink{structnetwork__module_a0b70928a73be3f659343f22be8a24f3e}{value\+\_\+received}
+\begin{DoxyCompactList}\small\item\em Whether or not a value has been received. \end{DoxyCompactList}\item 
+\hypertarget{structnetwork__module_a3e334c1bbb94af2c28a6f9640b71f9f3}{}bool($\ast$ \hyperlink{structnetwork__module_a3e334c1bbb94af2c28a6f9640b71f9f3}{connected} )(\hyperlink{structnetwork__module}{network} $\ast$)\label{structnetwork__module_a3e334c1bbb94af2c28a6f9640b71f9f3}
+
+\begin{DoxyCompactList}\small\item\em Whether or not a client is connected. \end{DoxyCompactList}\item 
+\hypertarget{structnetwork__module_ae02e17462647b1ccbfe0e0b32ee8c300}{}bool($\ast$ \hyperlink{structnetwork__module_ae02e17462647b1ccbfe0e0b32ee8c300}{available} )(\hyperlink{structnetwork__module}{network} $\ast$)\label{structnetwork__module_ae02e17462647b1ccbfe0e0b32ee8c300}
+
+\begin{DoxyCompactList}\small\item\em Whether or not a new piece of data is available. \end{DoxyCompactList}\item 
+\hypertarget{structnetwork__module_a67ee65e8fda7a67403847ae16ecd50b4}{}void($\ast$ \hyperlink{structnetwork__module_a67ee65e8fda7a67403847ae16ecd50b4}{accept} )(\hyperlink{structnetwork__module}{network} $\ast$)\label{structnetwork__module_a67ee65e8fda7a67403847ae16ecd50b4}
+
+\begin{DoxyCompactList}\small\item\em Accepts a client attempting to connect, if any. \end{DoxyCompactList}\item 
+\hypertarget{structnetwork__module_a88126c0e2db37f47180ecca97f14a7ab}{}void($\ast$ \hyperlink{structnetwork__module_a88126c0e2db37f47180ecca97f14a7ab}{get\+\_\+next} )(\hyperlink{structnetwork__module}{network} $\ast$)\label{structnetwork__module_a88126c0e2db37f47180ecca97f14a7ab}
+
+\begin{DoxyCompactList}\small\item\em Receives the next piece of data from the stream, if any. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Field Documentation}
+\hypertarget{structnetwork__module_ac0b46ce8ff26aba526e40974b4658d5f}{}\index{network\+\_\+module@{network\+\_\+module}!data\+\_\+available@{data\+\_\+available}}
+\index{data\+\_\+available@{data\+\_\+available}!network\+\_\+module@{network\+\_\+module}}
+\subsubsection[{data\+\_\+available}]{\setlength{\rightskip}{0pt plus 5cm}bool network\+\_\+module\+::data\+\_\+available}\label{structnetwork__module_ac0b46ce8ff26aba526e40974b4658d5f}
+
+
+Value showing whether or not a new data piece is available. 
+
+This is set to true whenever a complete data pair is received, and set to false again whenever the server is in the middle of crafting a pair. \hypertarget{structnetwork__module_a4784db26a8a7efad337587b17c3528e5}{}\index{network\+\_\+module@{network\+\_\+module}!key\+\_\+received@{key\+\_\+received}}
+\index{key\+\_\+received@{key\+\_\+received}!network\+\_\+module@{network\+\_\+module}}
+\subsubsection[{key\+\_\+received}]{\setlength{\rightskip}{0pt plus 5cm}bool network\+\_\+module\+::key\+\_\+received}\label{structnetwork__module_a4784db26a8a7efad337587b17c3528e5}
+
+
+Whether or not a key has been received. 
+
+If both key and value are received, data\+\_\+available is marked as true and both key\+\_\+received and value\+\_\+received are reset. \hypertarget{structnetwork__module_a2422beb02be2c0bcef02bbbbc43252fe}{}\index{network\+\_\+module@{network\+\_\+module}!remote@{remote}}
+\index{remote@{remote}!network\+\_\+module@{network\+\_\+module}}
+\subsubsection[{remote}]{\setlength{\rightskip}{0pt plus 5cm}Yun\+Client network\+\_\+module\+::remote}\label{structnetwork__module_a2422beb02be2c0bcef02bbbbc43252fe}
+
+
+Remote client object, on the controller side. 
+
+Currently the client must be on the same local network as the server for the connection to work. \hypertarget{structnetwork__module_a82b787509d4348843a4831156866c57e}{}\index{network\+\_\+module@{network\+\_\+module}!server@{server}}
+\index{server@{server}!network\+\_\+module@{network\+\_\+module}}
+\subsubsection[{server}]{\setlength{\rightskip}{0pt plus 5cm}Yun\+Server network\+\_\+module\+::server}\label{structnetwork__module_a82b787509d4348843a4831156866c57e}
+
+
+Server object on the Yun\textquotesingle{}s side. 
+
+Currently the Yun creates its own network, so a client needs to be connected to the local network in order to be able to access the server. \hypertarget{structnetwork__module_a0b70928a73be3f659343f22be8a24f3e}{}\index{network\+\_\+module@{network\+\_\+module}!value\+\_\+received@{value\+\_\+received}}
+\index{value\+\_\+received@{value\+\_\+received}!network\+\_\+module@{network\+\_\+module}}
+\subsubsection[{value\+\_\+received}]{\setlength{\rightskip}{0pt plus 5cm}bool network\+\_\+module\+::value\+\_\+received}\label{structnetwork__module_a0b70928a73be3f659343f22be8a24f3e}
+
+
+Whether or not a value has been received. 
+
+If both key and value are received, data\+\_\+available is marked as true and both key\+\_\+received and value\+\_\+received are reset. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+network.\+h\end{DoxyCompactItemize}

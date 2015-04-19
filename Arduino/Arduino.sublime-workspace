@@ -1,0 +1,1503 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"value",
+				"value_received"
+			],
+			[
+				"key",
+				"key_received"
+			],
+			[
+				"data",
+				"data_available"
+			],
+			[
+				"steer_",
+				"steer_motor"
+			],
+			[
+				"drive",
+				"drive_speed"
+			],
+			[
+				"steer",
+				"steer_max_value"
+			],
+			[
+				"analog",
+				"analogRead"
+			],
+			[
+				"read_",
+				"read_steer_pot_by_factor"
+			],
+			[
+				"PID",
+				"PID_drive_speed"
+			],
+			[
+				"safet",
+				"safety_check"
+			],
+			[
+				"Adaf",
+				"Adafruit_MotorShield"
+			],
+			[
+				"Ada",
+				"Adafruit_MotorShield"
+			],
+			[
+				"loca",
+				"locationsFromM	(function)"
+			],
+			[
+				"STE",
+				"STEER_MOTOR_POSITION_KEY"
+			],
+			[
+				"rou",
+				"roundDuration	(statement)"
+			],
+			[
+				"round",
+				"roundStart	(statement)"
+			],
+			[
+				"game",
+				"gameRound	(statement)"
+			],
+			[
+				"roun",
+				"roundStage	(statement)"
+			],
+			[
+				"I",
+				"ImageProcessor	(class)"
+			],
+			[
+				"FONT_H",
+				"FONT_HERSHEY_SIMPLEX	(class)"
+			],
+			[
+				"te",
+				"TextDetector	(class)"
+			],
+			[
+				"tex",
+				"textString	(function)"
+			],
+			[
+				"IPL_dep",
+				"IPL_DEPTH_8U	(class)"
+			],
+			[
+				"something",
+				"somethingElse	(param)"
+			],
+			[
+				"destr",
+				"destroyAllWindows	(function)"
+			],
+			[
+				"homw",
+				"homeworkmod	(statement)"
+			],
+			[
+				"varia",
+				"variableName	(statement)"
+			],
+			[
+				"cont",
+				"contains_digits	(function)"
+			],
+			[
+				"homewor",
+				"homeworkmod	(statement)"
+			],
+			[
+				"bottom",
+				"bottomLeft"
+			],
+			[
+				"boto",
+				"bottomRight"
+			],
+			[
+				"rotate",
+				"rotateCCW"
+			],
+			[
+				"sum",
+				"sumOfFntoN	(function)"
+			],
+			[
+				"testEs",
+				"testEstimatedPiError"
+			],
+			[
+				"DRI",
+				"DRIVE_MOTOR_SPEED_KEY"
+			],
+			[
+				"DRIVE",
+				"DRIVE_MOTOR_DIR_KEY"
+			],
+			[
+				"DRIVe",
+				"DRIVE_MOTOR_DIR_KEY"
+			],
+			[
+				"time",
+				"time	(param)"
+			],
+			[
+				"steerm",
+				"steerMotorDirs"
+			],
+			[
+				"steermo",
+				"steerMotorPositions"
+			],
+			[
+				"ster",
+				"steerMotorDirs"
+			],
+			[
+				"STEER",
+				"STEER_MOTOR_POSITION_KEY"
+			],
+			[
+				"activ",
+				"activateSmiley	(function)"
+			],
+			[
+				"gestu",
+				"gestureIndex	(param)"
+			],
+			[
+				"getc",
+				"getScaledCenter	(function)"
+			],
+			[
+				"image",
+				"imagetk3	(statement)"
+			],
+			[
+				"getrg",
+				"getRGBAFromGray	(function)"
+			],
+			[
+				"getrgbafr",
+				"getRGBAFromBGR	(function)"
+			],
+			[
+				"COLOR_BGR",
+				"COLOR_BGR2RGBA"
+			],
+			[
+				"findCenter",
+				"findCenterCircleAndRadius"
+			],
+			[
+				"thresho",
+				"thresholded"
+			],
+			[
+				"camera",
+				"cameraWidth"
+			],
+			[
+				"reduc",
+				"reductionCenter"
+			],
+			[
+				"hand",
+				"handContour	(statement)"
+			],
+			[
+				"radius",
+				"radiusses"
+			],
+			[
+				"starT",
+				"startTime"
+			],
+			[
+				"maxi",
+				"maxInscribedCircle"
+			],
+			[
+				"maxIn",
+				"maxInscribedCircle"
+			],
+			[
+				"distance",
+				"distanceCheck"
+			],
+			[
+				"handc",
+				"handContour"
+			],
+			[
+				"iter",
+				"nditer	(statement)"
+			],
+			[
+				"weight",
+				"weightedAvg"
+			],
+			[
+				"hul",
+				"hullPoints"
+			],
+			[
+				"Gestu",
+				"GestureProcessor"
+			],
+			[
+				"center",
+				"centerCandidates"
+			],
+			[
+				"combina",
+				"combination"
+			],
+			[
+				"change",
+				"changedPt"
+			],
+			[
+				"combiantion",
+				"combination	(forflow)"
+			],
+			[
+				"COLOr_",
+				"COLOR_GRAY2RGBA"
+			],
+			[
+				"COLOR_",
+				"COLOR_GRAY2RGBA	(class)"
+			],
+			[
+				"COLORbgr",
+				"COLOR_BGR2RGBA"
+			],
+			[
+				"Gesture",
+				"GestureDemo"
+			],
+			[
+				"eve",
+				"EventBasedAnimationClass	(class)"
+			],
+			[
+				"Event",
+				"EventBasedAnimationClass(300,300"
+			],
+			[
+				"color_bg2",
+				"COLOR_BGR2GRAY	(class)"
+			],
+			[
+				"thresh",
+				"THRESH_OTSU	(class)"
+			],
+			[
+				"thresh_b",
+				"THRESH_BINARY_INV	(class)"
+			],
+			[
+				"thre",
+				"threshold	(function)"
+			],
+			[
+				"backgrou",
+				"BackgroundSubtractorMOG	(function)"
+			],
+			[
+				"create",
+				"createBackgroundSubtractorGMG"
+			],
+			[
+				"get",
+				"getStructuringElement"
+			],
+			[
+				"deno",
+				"denoised	(statement)"
+			],
+			[
+				"fastn",
+				"fastNlMeansDenoisingColored	(function)"
+			],
+			[
+				"frame",
+				"frameCount"
+			],
+			[
+				"asse",
+				"assessment"
+			],
+			[
+				"diagontl",
+				"diagonalTLtoBR"
+			],
+			[
+				"vlin",
+				"vLineBT"
+			],
+			[
+				"defau",
+				"defaultGestures"
+			],
+			[
+				"default",
+				"defaultGesturesLoader"
+			],
+			[
+				"distanceDi",
+				"distanceDiffRatio"
+			],
+			[
+				"template",
+				"templateGestureRatio"
+			],
+			[
+				"total",
+				"totalDistance"
+			],
+			[
+				"ass",
+				"assessment"
+			],
+			[
+				"gest",
+				"gestures"
+			],
+			[
+				"range",
+				"rangeRatio"
+			],
+			[
+				"defua",
+				"defaultGestures"
+			],
+			[
+				"likel",
+				"likelihoodScores"
+			],
+			[
+				"like",
+				"likelihoodScores"
+			],
+			[
+				"distanc",
+				"distanceRange"
+			],
+			[
+				"dis",
+				"distanceDiff"
+			],
+			[
+				"error",
+				"errorRatio"
+			],
+			[
+				"distan",
+				"distanceList"
+			],
+			[
+				"dista",
+				"distanceIndices"
+			],
+			[
+				"max",
+				"maxFound"
+			],
+			[
+				"Ges",
+				"Gestures"
+			],
+			[
+				"gesu",
+				"gestures"
+			],
+			[
+				"maxd",
+				"maxDistance"
+			],
+			[
+				"findin",
+				"findIndex"
+			],
+			[
+				"linear",
+				"linearizeTemplate"
+			],
+			[
+				"finIn",
+				"findIndices"
+			],
+			[
+				"distna",
+				"distanceIndices"
+			],
+			[
+				"dits",
+				"distanceIndices"
+			],
+			[
+				"stay",
+				"staySucesses"
+			],
+			[
+				"ran",
+				"randint"
+			],
+			[
+				"curve",
+				"curveLengthWithCumulativeDistanceIndices"
+			],
+			[
+				"compare",
+				"compareGestures	(function)"
+			],
+			[
+				"cur",
+				"curveLengthWithCumulativeDistanceIndices"
+			],
+			[
+				"cumu",
+				"cumulativeDistance"
+			],
+			[
+				"norma",
+				"normalizePoints"
+			],
+			[
+				"gesture",
+				"gesturePoints"
+			],
+			[
+				"ccw",
+				"ccwCircleTemplate"
+			],
+			[
+				"circl",
+				"circlePoints"
+			],
+			[
+				"ge",
+				"gesturePoints"
+			],
+			[
+				"gestur",
+				"gesturePoints"
+			],
+			[
+				"templ",
+				"templateDistance"
+			],
+			[
+				"ges",
+				"gestureTemplates"
+			],
+			[
+				"mine",
+				"minError"
+			],
+			[
+				"miner",
+				"minErrorIndex"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "#include <module.h>\n\n/**\n * Initialization function for a module struct.\n * @param  pot_port           See struct definition.\n * @param  read_reduce_factor See struct definition.\n * @param  read_min_value     See struct definition.\n * @param  read_max_value     See struct definition.\n * @param  shield             See struct definition.\n * @param  steer_port         See struct definition.\n * @param  steer_home_value   See struct definition.\n * @param  steer_min_value    See struct definition.\n * @param  steer_max_value    See struct definition.\n * @param  drive_port         See struct definition.\n * @return                    Returns a module with initialized values.\n */\nmodule* module_init(uint8_t pot_port, uint8_t read_reduce_factor,\n    uint16_t read_min_value, uint16_t read_max_value,\n    Adafruit_MotorShield *shield, uint8_t steer_port, uint16_t steer_home_value,\n    uint16_t steer_min_value, uint16_t steer_max_value, uint8_t drive_port) {\n    \n    module* m;\n    //should probably add some sort of error checking for all of these values\n    m->pot_port = pot_port;\n    m->read_reduce_factor = read_reduce_factor;\n    m->read_min_value = read_min_value;\n    m->read_max_value = read_max_value;\n    m->shield = shield;\n    m->steer_port = steer_port;\n    m->steer_home_value = steer_home_value;\n    m->steer_min_value = steer_min_value;\n    m->steer_max_value = steer_max_value;\n    m->steer_pos = m->steer_home_value;\n    m->steer_motor = m->shield->getMotor(m->steer_port);\n    //m->steer_PID = PID();\n    m->PID_steer_output = m->steer_pos;\n    m->drive_port = drive_port;\n    m->drive_dir = 0; // Don't move originally.\n    m->drive_speed = 0; // Again, let's not move originally.\n    m->drive_motor = m->shield->getMotor(m->drive_port);\n    //m->drive_PID = PID();\n    m->PID_drive_output = m->drive_speed;\n    \n    //Function pointers\n    m->set_steer_pos = set_steer_pos;\n    m->go_home = go_home;\n    m->stop_driving = stop_driving;\n    m->error = error;\n    m->update = update;\n\n    return m;\n}\n\n/**\n * Method to change the steering position of a module\n * @param m         this\n * @param steer_pos Steering position from [steer_min_value, steer_max_value)\n */\nvoid set_steer_pos(module *m, uint16_t steer_pos) {\n    if (m->steer_min_value <= steer_pos && steer_pos < m->steer_max_value){\n        m->steer_pos = steer_pos;\n    } else {\n        m->error(m);\n    }\n}\n\nvoid set_drive_dir(module *m, int8_t drive_dir) {\n    m->drive_dir = drive_dir;\n}\n\nvoid set_drive_speed(module *m, uint8_t drive_speed) {\n    m->drive_speed = drive_speed;\n}\n\n/**\n * Safety method to return the module to home position\n * @param m this\n */\nvoid go_home(module *m) {\n    m->steer_pos = m->steer_home_value;\n    return;\n}\n\n/**\n * Safety method to set the drive speed to 0 and release motor\n * @param m this\n */\nvoid stop_driving(module *m) {\n    m->drive_speed = 0;\n    m->drive_dir = 0;\n    return;\n}\n\nvoid error(module *m) {\n    m->go_home(m);\n    m->stop_driving(m);\n    return;\n}\n\n/**\n * Checks to see whether module is at a safe operating point.\n * @param  m this\n * @return   Returns whether module is safe or not.\n */\nbool safety_check(module *m) {\n    int16_t current = m->read_steer_pot(m);\n    return (m->steer_min_value <= current && current < m->steer_max_value)\n}\n\nvoid update(module *m) {\n    //Begin with a safety check\n    if (m->safety_check(m)) {\n        //PID update\n        //steer update, assumes negative PID is backward\n        if (m->PID_steer_output < 0) {\n            (m->steer_motor)->run(BACKWARD);\n            (m->steer_motor)->setSpeed(abs(m->PID_steer_output));\n        } else if (m->PID_steer_output == 0) {\n            (m->steer_motor)->run(RELEASE);\n            (m->steer_motor)->setSpeed(0);\n        } else {\n            (m->steer_motor)->run(FORWARD);\n            (m->steer_motor)->setSpeed(m->PID_steer_output);\n        }\n\n        //drive update, assumes negative PID is backward\n        if (m->PID_drive_output < 0) {\n            (m->drive_motor)->run(BACKWARD);\n            (m->drive_motor)->setSpeed(abs(m->PID_drive_output));\n        } else if (m->PID_drive_output == 0) {\n            (m->drive_motor)->run(RELEASE);\n            (m->drive_motor)->setSpeed(0);\n        } else {\n            (m->drive_motor)->run(FORWARD);\n            (m->drive_motor)->setSpeed(m->PID_drive_output));\n        }\n    } else {\n        m->error(m);\n    }\n}\n\nuint16_t read_steer_pot_by_factor(module *m) {\n    return analogRead(m->pot_port) / m->read_reduce_factor;\n}\n\nuint16_t read_steer_pot(module *m) {\n    return analogRead(m->pot_port);\n}",
+			"file": "module.c",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 4566,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "#include \"network.h\"\n\n/**\n * Creates a new network object.\n * @return An empty network object.\n */\nnetwork* network_init() {\n    network* net;\n    net->data_available = false;\n    net->key = 0;\n    net->value = 0;\n    net->key_received = false;\n    net->value_received = false;\n    net->server = server(PORT);\n    (net->server).noListenOnLocalHost();\n    (net->server).begin();\n\n    net->connected = connected;\n    net->available = available;\n    net->accept = accept;\n    net->get_next = get_next;\n\n    return net;\n}\n\n/**\n * Method to determine whether there is a client connected.\n * @param  net The network object.\n * @return      Whether or not an object is connected.\n */\nbool connected(network *net) {\n    return (net->remote).connected();\n}\n\n/**\n * Method to determine whether there is a new key-value pair available for\n * processing.\n * @param  net The network object.\n * @return      Whether or not a new data pair is available to the client.\n */\nbool available(network *net) {\n    return net->data_available;\n}\n\n/**\n * Accepts a new client, if any are attempting to connect.\n * @param net The network object.\n */\nvoid accept(network *net) {\n    net->remote = (net->server).accept();\n    return;\n}\n\n/**\n * Function to receive key-value pairs from the network.\n * @param net The network object.\n */\nvoid get_next(network *net) {\n    if ((net->remote).connected() && (net->remote).available()) {\n        byte received = (net->remote).read();\n        if (received == -1) {\n            return;\n        }\n\n        if (!(net->key_received)) {\n            net->key = received;\n            net->key_received = true;\n            net->data_available = false;\n        } else if (net->key_received && !(net->value_received)) {\n            net->value = received;\n            net->value_received = true;\n        }\n\n        if (net->key_received && net->value_received) {\n            net->data_available = true;\n            net->key_received = false;\n            net->value_received = false;\n        }\n    }\n}\n",
+			"file": "network.cpp",
+			"file_size": 1905,
+			"file_write_time": 130720721802668779,
+			"settings":
+			{
+				"buffer_size": 2005,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "#include <Bridge.h>\n#include <Wire.h>\n#include <Adafruit_MotorShield.h>\n#include \"utility/Adafruit_PWMServoDriver.h\"\n#include \"module.h\"\n#include \"network.h\"\n\nmodule* modules[4];\nnetwork* net;\n\nAdafruit_MotorShield shield1 = Adafruit_MotorShield(0x60); // bottom shield\nAdafruit_MotorShield shield2 = Adafruit_MotorShield(0x61); // top shield\n\nvoid setup(){\n    Serial.begin(115200);\n    Serial.println(\"Current Version: 0.60\")\n    // Lots of magic numbers\n    modules[0] = module_init(0, 4, 0, 1024, &shield2, 2, 450, 200, 800, 1);\n    modules[1] = module_init(1, 4, 0, 1024, &shield1, 2, 500, 200, 800, 1);\n    modules[2] = module_init(2, 4, 0, 1024, &shield1, 3, 483, 200, 800, 4);\n    modules[3] = module_init(3, 4, 0, 1024, &shield2, 3, 480, 200, 800, 4);\n    net = network_init();\n}\n\nvoid loop(){\n    net->accept(net);\n\n    while (net->connected(net)) {\n        net->get_next(net);\n        if (net->available(net)) {\n            switch(net->key) {\n                case MODULE_0_DRIVE_MOTOR_SPD:\n                    modules[0]->set_drive_speed(modules[0],(uint8_t)net->value);\n                    break;\n                case MODULE_0_DRIVE_MOTOR_DIR:\n                    modules[0]->set_drive_dir(modules[0], (int8_t)net->value);\n                    break;\n                case MODULE_0_STEER_MOTOR_POS:\n                    modules[0]->set_steer_pos(modules[0], (uint16_t)net->value);\n                    break;\n                case MODULE_1_DRIVE_MOTOR_SPD:\n                    modules[1]->set_drive_speed(modules[1],(uint8_t)net->value);\n                    break;\n                case MODULE_1_DRIVE_MOTOR_DIR:\n                    modules[1]->set_drive_dir(modules[1], (int8_t)net->value);\n                    break;\n                case MODULE_1_STEER_MOTOR_POS:\n                    modules[1]->set_steer_pos(modules[1], (uint16_t)net->value);\n                    break;\n                case MODULE_2_DRIVE_MOTOR_SPD:\n                    modules[2]->set_drive_speed(modules[2],(uint8_t)net->value);\n                    break;\n                case MODULE_2_DRIVE_MOTOR_DIR:\n                    modules[2]->set_drive_dir(modules[2], (int8_t)net->value);\n                    break;\n                case MODULE_2_STEER_MOTOR_POS:\n                    modules[2]->set_steer_pos(modules[2], (uint16_t)net->value);\n                    break;\n                case MODULE_3_DRIVE_MOTOR_SPD:\n                    modules[3]->set_drive_speed(modules[3],(uint8_t)net->value);\n                    break;\n                case MODULE_3_DRIVE_MOTOR_DIR:\n                    modules[3]->set_drive_dir(modules[3], (int8_t)net->value);\n                    break;\n                case MODULE_3_STEER_MOTOR_POS:\n                    modules[3]->set_steer_pos(modules[3], (uint16_t)net->value);\n                    break;\n            }\n        }\n        Serial.println(\"Module 0: Drive Speed: %i Drive Dir: %i Steer Pos: %i\", \n            modules[0]->drive_speed, modules[0]->drive_dir, modules[0]->steer_pos);\n        Serial.println(\"Module 0: Drive Speed: %i Drive Dir: %i Steer Pos: %i\", \n            modules[1]->drive_speed, modules[1]->drive_dir, modules[1]->steer_pos);\n        Serial.println(\"Module 0: Drive Speed: %i Drive Dir: %i Steer Pos: %i\", \n            modules[2]->drive_speed, modules[2]->drive_dir, modules[2]->steer_pos);\n        Serial.println(\"Module 0: Drive Speed: %i Drive Dir: %i Steer Pos: %i\", \n            modules[3]->drive_speed, modules[3]->drive_dir, modules[3]->steer_pos);\n    }\n}\n",
+			"file": "Arduino.ino",
+			"file_size": 854,
+			"file_write_time": 130720604697488620,
+			"settings":
+			{
+				"buffer_size": 3498,
+				"line_ending": "Unix",
+				"name": "#include <module.h>"
+			}
+		},
+		{
+			"contents": "#include <Bridge.h>\n#include <YunServer.h>\n#include <YunClient.h>\n#include <Wire.h>\n#include <Adafruit_MotorShield.h>\n#include \"utility/Adafruit_PWMServoDriver.h\"\n\n#define PORT 6666\n#define DRIVE_MOTOR_SPEED_KEY 0\n#define DRIVE_MOTOR_DIR_KEY 1\n#define STEER_MOTOR_POSITION_KEY 2\n#define STEER_MOTOR_DIR_KEY 3\n\n#define KEY_SIZE 5\n#define SPEC_SIZE 3\n#define VALUE_SIZE 8\n\nYunServer server(PORT);\n\nAdafruit_MotorShield shield1 = Adafruit_MotorShield(0x60); // bottom shield\nAdafruit_MotorShield shield2 = Adafruit_MotorShield(0x61); // top shield\n\nstruct module_assembly {\n  int8_t potPort;\n  int8_t steerShieldPort;\n  int8_t driveShieldPort;\n  int homeValue;\n  int8_t driveDir;\n  int8_t driveSpeed;\n  Adafruit_MotorShield shield;\n  Adafruit_DCMotor* driveMotor;\n  Adafruit_DCMotor* steerMotor;\n  double PIDInput;\n  double PIDOutput;\n  double PIDSetpoint;\n  PID steerPID;\n};\ntypedef struct module_assembly module;\n\nmodule modules[4];\n\nint analogReadShift(port){\n  return analogRead(port) / 4;\n}\n\nvoid setup() {\n  modules[0].potPort = 0;\n  modules[0].steerShieldPort = 2;\n  modules[0].driveShieldPort = 1;\n  modules[0].homeValue = 450 / 4;\n  modules[0].shield = shield2; // 0x61;\n\n  modules[1].potPort = 1;\n  modules[1].steerShieldPort = 2;\n  modules[1].driveShieldPort = 1;\n  modules[1].homeValue = 500 / 4; // experimentally determined\n  modules[1].shield = shield1; // 0x60;\n\n  modules[2].potPort = 2;\n  modules[2].steerShieldPort = 3;\n  modules[2].driveShieldPort = 4;\n  modules[2].homeValue = 483 / 4;\n  modules[2].shield = shield1; // 0x60;\n\n  modules[3].potPort = 3;\n  modules[3].steerShieldPort = 3;\n  modules[3].driveShieldPort = 4;\n  modules[3].homeValue = 480 / 4;\n  modules[3].shield = shield2; // 0x61;\n\n  for(int i = 0; i < 4; i++){\n    modules[i].driveMotor = modules[i].shield.getMotor(modules[i].driveShieldPort);\n    modules[i].steerMotor = modules[i].shield.getMotor(modules[i].steerShieldPort);\n    modules[i].driveDir = 0;\n    modules[i].driveSpeed = 0;\n    modules[i].PIDInput = analogReadShift(modules[i].potPort);\n    modules[i].PIDOutput = 0;\n    modules[i].PIDSetpoint = homeValue;\n    modules[i].steerPID = PID(&modules[i].PIDInput, &modules[i].PIDOutput, &modules[i].PIDSetpoint,\n                              2, 0, 0, DIRECT);\n    modules[i].steerPID.SetMode(AUTOMATIC);\n    modules[i].steerPID.SetControllerDirection(DIRECT);\n    modules[i].SetOutputLimits(-128, 128); // limit to +/- 6V since we're using 12V rail\n  }\n\n  shield1.begin();\n  shield2.begin();\n\n  // this will act as the server\n  Serial.begin(115200);\n  Bridge.begin();\n  \n  server.noListenOnLocalhost();\n  server.begin();\n}\n\nvoid loop() {\n  Serial.println(\"Current Version: .50\");\n  YunClient remote = server.accept();\n\n  if(remote.connected()){\n    Serial.println(\"REMOTE CONNECTED!\");\n\n    String string = \"\";\n    unsigned short data = 0;\n    uint8_t numRecv = 0;\n    uint8_t dataSize = 2;\n\n    //  once this loop is entered, it should not break out of the loop until\n    // the client disconnects\n    while(remote.connected()){\n      // if there's any new data to be processed, do it\n      // what this means that any updates will only happen when we receive\n      // a complete data set. Until then, we're  just going to keep reading\n      // since that's perhaps more important.\n      if(remote.available()){\n        byte received = remote.read();\n        \n        if (received == -1){\n          continue;\n        }\n        \n        data = data << 8;\n        data += received;\n\n        numRecv++;\n\n        //further, only process if we have enough data\n        if (numRecv == dataSize){\n\n          uint8_t key = findKey(data);\n          uint8_t spec = findSpec(data);\n          uint8_t value = findValue(data);\n          \n          doUpdate(key, spec, value);\n\n          data = 0; // clears the data to be updated for next time\n          numRecv = 0; // resets the numRecv counter\n        }\n\n        else if (numRecv < dataSize){\n          // do nothing since we're just going to want to read for more imput\n        }\n      }\n    }\n    // shouldn't get here until the client terminates\n    remote.stop();\n  }\n\n  else {\n    Serial.println(\"no remote connected, retrying\");\n  }\n\n  delay(1000);\n}\n\nuint8_t findKey(unsigned short data){\n  unsigned short mask = 0xF800; //1111100000000000\n  unsigned short masked = data & mask;\n  masked = masked >> SPEC_SIZE + VALUE_SIZE;\n  return (uint8_t)masked;\n}\n\nuint8_t findSpec(unsigned short data){\n  unsigned short mask = 0x0700; //0000011100000000\n  unsigned short masked = data & mask;\n  masked =  masked >> VALUE_SIZE;\n  return (uint8_t)masked;\n}\n\nuint8_t findValue(unsigned short data){\n  unsigned short mask = 0x00FF; //0000000011111111\n  unsigned short masked = data & mask;\n  return (uint8_t)masked;\n}\n\nint dir(uint8_t spec){\n  if (spec == 1){\n    return FORWARD;\n  } else if (spec == -1){\n    return BACKWARD;\n  } else{\n    return RELEASE;\n  }\n}\n  \nvoid doUpdate(uint8_t key, uint8_t spec, uint8_t value){\n  Serial.print(\"Updating key \");\n  Serial.print(key);\n  Serial.print(\" for spec \");\n  Serial.print(spec);\n  Serial.print(\" with value \");\n  Serial.print(value);\n  Serial.println(\".\");\n\n  switch(key){\n    case DRIVE_MOTOR_DIR_KEY:\n    // need to set the value in array, set set speed again, and set dir\n      modules[spec].driveDir = value;\n      modules[spec].driveMotor->setSpeed(modules[spec].driveSpeed);\n      modules[spec].driveMotor->run(dir(modules[spec].driveDir));\n      break;\n    case DRIVE_MOTOR_SPEED_KEY:\n      modules[spec].driveSpeed = value;\n      modules[spec].driveMotor->setSpeed(modules[spec].driveSpeed);\n      modules[spec].driveMotor->run(dir(modules[spec].driveDir));\n      break;\n    case STEER_MOTOR_DIR_KEY:`\n      break;\n    case STEER_MOTOR_POSITION_KEY:\n      break;\n  }\n}\n\nint getPotPosition(uint8_t spec){\n  return analogRead(modules[spec].potPort);\n}\n",
+			"file": "ArduinoServerSRC.ino",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 5834,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "// // #include <Bridge.h>\n// // #include <YunServer.h>\n// // #include <YunClient.h>\n// // #include <Wire.h>\n// // #include <Adafruit_MotorShield.h>\n// // #include \"utility/Adafruit_PWMServoDriver.h\"\n// // #include <PID_v1.h>\n\n// // #define PORT 6666\n// // #define DRIVE_MOTOR_SPEED_KEY 0\n// // #define DRIVE_MOTOR_DIR_KEY 1\n// // #define STEER_MOTOR_POSITION_KEY 2\n// // #define STEER_MOTOR_DIR_KEY 3\n\n// // #define KEY_SIZE 5\n// // #define SPEC_SIZE 3\n// // #define VALUE_SIZE 8\n\n// // YunServer server(PORT);\n\n// // int8_t driveMotorSpeeds[] = {0, 0, 0, 0};\n// // int8_t driveMotorDirs[] = {0, 0, 0, 0};\n// // int8_t steerMotorPositions[] = {0, 0, 0, 0}; // this will be the home position\n// // int8_t steerMotorDirs[] = {0, 0, 0, 0}; // turning direction for wheels\n// // int8_t steerPotPins[] = {10, 15, 20, 25};\n\n// // Adafruit_MotorShield shield1 = Adafruit_MotorShield(0x60); // bottom shield\n// // Adafruit_MotorShield shield2 = Adafruit_MotorShield(0x61); // top shield\n\n// // Adafruit_DCMotor *driveMotors[4];\n// // Adafruit_DCMotor *steerMotors[4];\n\n// // void setup() {\n// //   driveMotors[0] = shield1.getMotor(2);\n// //   driveMotors[1] = shield1.getMotor(4);\n// //   driveMotors[2] = shield2.getMotor(2);\n// //   driveMotors[3] = shield2.getMotor(4);\n\n// //   steerMotors[0] = shield1.getMotor(1);\n// //   steerMotors[1] = shield1.getMotor(3);\n// //   steerMotors[2] = shield2.getMotor(1);\n// //   steerMotors[3] = shield2.getMotor(3);\n\n// //   shield1.begin();\n// //   shield2.begin();\n\n// //   // this will act as the server\n// //   Serial.begin(115200);\n// //   Bridge.begin();\n  \n// //   server.noListenOnLocalhost();\n// //   server.begin();\n// // }\n\n// // void loop() {\n\n// //   for (int i = 0; i < 4; i++){\n// //     Serial.print(analogRead(i) >> 4);\n// //     Serial.print(\" \");\n// //   }\n\n// //   Serial.println();\n\n// //   delay(200);\n// // }\n\n// /********************************************************\n//  * PID Adaptive Tuning Example\n//  * One of the benefits of the PID library is that you can\n//  * change the tuning parameters at any time.  this can be\n//  * helpful if we want the controller to be agressive at some\n//  * times, and conservative at others.   in the example below\n//  * we set the controller to use Conservative Tuning Parameters\n//  * when we're near setpoint and more agressive Tuning\n//  * ParametePIDrs when we're farther away.\n//  ********************************************************/\n\n// #include <PID_v1.h>\n\n// //Define Variables we'll be connecting to\n// double Setpoint, Input, Output;\n\n// //Define the aggressive and conservative Tuning Parameters\n// double aggKp=4, aggKi=0.2, aggKd=1;\n// double consKp=1, consKi=0.05, consKd=0.25;\n\n// //Specify the links and initial tuning parameters\n// PID myPID(&Input, &Output, &Setpoint, consKp, consKi, consKd, DIRECT);\n\n// void setup()\n// {\n//   //initialize the variables we're linked to\n//   Input = analogRead(0);\n//   Setpoint = 100;\n//   Serial.begin(115200);\n\n//   //turn the PID on\n//   myPID.SetMode(AUTOMATIC);\n// }\n\n// void loop()\n// {\n//   Input = analogRead(0);\n  \n//   double gap = abs(Setpoint-Input); //distance away from setpoint\n//   if(gap<10)\n//   {  //we're close to setpoint, use conservative tuning parameters\n//     myPID.SetTunings(consKp, consKi, consKd);\n//   }\n//   else\n//   {\n//      //we're far from setpoint, use aggressive tuning parameters\n//      myPID.SetTunings(aggKp, aggKi, aggKd);\n//   }\n  \n//   myPID.Compute();\n//   println(Output);\n// }\n\n\n\n/********************************************************\n * PID Basic Example\n * Reading analog input 0 to control analog PWM output 3\n ********************************************************/\n\n#include <PID_v1.h>\n#include <Wire.h>\n#include <Adafruit_MotorShield.h>\n#include \"utility/Adafruit_PWMServoDriver.h\"\n\n//Define Variables we'll be connecting to\ndouble Setpoint, Input, Output;\n\n//Specify the links and initial tuning parameters\nPID myPID(&Input, &Output, &Setpoint,2,0,0, DIRECT);\n\nAdafruit_MotorShield shield1 = Adafruit_MotorShield(0x61);\n\nAdafruit_DCMotor* motor;\n\nvoid setup()\n{\n  //initialize the variables we're linked to\n  Input = analogRead(0) / 4; // Capacity of (0, 255)\n  Setpoint = 25; \n  Serial.begin(115200);\n\n  //turn the PID on\n  myPID.SetMode(AUTOMATIC);\n  myPID.SetControllerDirection(DIRECT);\n  myPID.SetOutputLimits(-255, 255);\n\n  motor = shield1.getMotor(1);\n  shield1.begin();\n}\n\nvoid loop()\n{\n  Input = analogRead(0) / 4;\n  Output = map(Input, 0, 255, -255, 255);\n\n  Serial.print(Input, )\n\n  if (Output < 0){\n    motor->run(BACKWARD);\n    motor->setSpeed(abs(Output));\n    Serial.print(\"-\");\n    Serial.print(abs(Output));\n    Serial.print(\" \");\n  }\n  else if (Output >= 0){\n    motor->run(FORWARD);\n    motor->setSpeed(Output);\n    Serial.print(\"+\");\n    Serial.print(abs(Output));\n    Serial.print(\" \");\n  }\n\n  motor->setSpeed(Output);\n  Serial.print(Input);\n  Serial.print(\" \");\n  Serial.print(Output);\n  Serial.println();\n}",
+			"file": "ArduinoPotsTest.ino",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 4948,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "/********************************************************\n * PID Basic Example\n * Reading analog input 0 to control analog PWM output 3\n ********************************************************/\n\n#include <Wire.h>\n#include <Adafruit_MotorShield.h>\n#include \"utility/Adafruit_PWMServoDriver.h\"\n#include <PID_v1.h>\n\nAdafruit_MotorShield shield1 = Adafruit_MotorShield(0x60);\n\ndouble Setpoint, Input, Output;\n\nPID myPID(&Input, &Output, &Setpoint, 2, 0, 0, DIRECT);\nbool fucked = false;\n\nAdafruit_DCMotor* motor;\n\nvoid setup()\n{\n  //initialize the variables we're linked to\n  Serial.begin(115200);\n  Setpoint = 150;\n  myPID.SetMode(AUTOMATIC);\n  myPID.SetOutputLimits(-128, 128); // +/- 6V max\n  motor = shield1.getMotor(3);\n  shield1.begin();\n}\n\nvoid loop()\n{\n  if (fucked) {\n    motor->setSpeed(0);\n    motor->run(RELEASE);\n    return;\n  }\n\n  if (Serial.available() > 0) {\n    int Setpoint = Serial.parseInt();\n    Serial.print(\"New setpoint: \");\n    Serial.println(Setpoint);\n  }\n\n  Input = analogRead(4) / 4; // 0 - 256ish\n\n  for (int i = 2; i < 6; i++){\n    if (analogRead(i) / 4 < 50 || analogRead(i) / 4 > 200) {\n      motor->setSpeed(0);\n      motor->run(RELEASE);\n      Serial.print(i);\n      Serial.print(\" \");\n      Serial.print(analogRead(i));\n      Serial.println(\" FUCK\");  \n      fucked = true;\n    }\n  }\n    \n  if (Serial.available() > 0) {\n    int input = Serial.parseInt();\n    motor->setSpeed(50);\n    motor->run(BACKWARD);\n    delay(input);\n    motor->setSpeed(0);\n    motor->run(RELEASE);\n  }\n}",
+			"file": "ArduinoSteerMotorTest.ino",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 1512,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\nYunServer server(PORT);\n\nAdafruit_MotorShield shield1 = Adafruit_MotorShield(0x60); // bottom shield\nAdafruit_MotorShield shield2 = Adafruit_MotorShield(0x61); // top shield\n\nstruct module_assembly {\n  int8_t potPort;\n  int8_t steerShieldPort;\n  int8_t driveShieldPort;\n  int homeValue;\n  int8_t driveDir;\n  int8_t driveSpeed;\n  Adafruit_MotorShield shield;\n  Adafruit_DCMotor* driveMotor;\n  Adafruit_DCMotor* steerMotor;\n  double PIDInput;\n  double PIDOutput;\n  double PIDSetpoint;\n  PID steerPID;\n};\ntypedef struct module_assembly module;\n\nmodule modules[4];\n\nint analogReadShift(port){\n  return analogRead(port) / 4;\n}\n\nvoid setup() {\n  modules[0].potPort = 0;\n  modules[0].steerShieldPort = 2;\n  modules[0].driveShieldPort = 1;\n  modules[0].homeValue = 450 / 4;\n  modules[0].shield = shield2; // 0x61;\n\n  modules[1].potPort = 1;\n  modules[1].steerShieldPort = 2;\n  modules[1].driveShieldPort = 1;\n  modules[1].homeValue = 500 / 4; // experimentally determined\n  modules[1].shield = shield1; // 0x60;\n\n  modules[2].potPort = 2;\n  modules[2].steerShieldPort = 3;\n  modules[2].driveShieldPort = 4;\n  modules[2].homeValue = 483 / 4;\n  modules[2].shield = shield1; // 0x60;\n\n  modules[3].potPort = 3;\n  modules[3].steerShieldPort = 3;\n  modules[3].driveShieldPort = 4;\n  modules[3].homeValue = 480 / 4;\n  modules[3].shield = shield2; // 0x61;\n\n  for(int i = 0; i < 4; i++){\n    modules[i].driveMotor = modules[i].shield.getMotor(modules[i].driveShieldPort);\n    modules[i].steerMotor = modules[i].shield.getMotor(modules[i].steerShieldPort);\n    modules[i].driveDir = 0;\n    modules[i].driveSpeed = 0;\n    modules[i].PIDInput = analogReadShift(modules[i].potPort);\n    modules[i].PIDOutput = 0;\n    modules[i].PIDSetpoint = homeValue;\n    modules[i].steerPID = PID(&modules[i].PIDInput, &modules[i].PIDOutput, &modules[i].PIDSetpoint,\n                              2, 0, 0, DIRECT);\n    modules[i].steerPID.SetMode(AUTOMATIC);\n    modules[i].steerPID.SetControllerDirection(DIRECT);\n    modules[i].SetOutputLimits(-128, 128); // limit to +/- 6V since we're using 12V rail\n  }\n\n  shield1.begin();\n  shield2.begin();\n\n  // this will act as the server\n  Serial.begin(115200);\n  Bridge.begin();\n  \n  server.noListenOnLocalhost();\n  server.begin();\n}\n\nvoid loop() {\n  Serial.println(\"Current Version: .50\");\n  YunClient remote = server.accept();\n\n  if(remote.connected()){\n    Serial.println(\"REMOTE CONNECTED!\");\n\n    String string = \"\";\n    unsigned short data = 0;\n    uint8_t numRecv = 0;\n    uint8_t dataSize = 2;\n\n    //  once this loop is entered, it should not break out of the loop until\n    // the client disconnects\n    while(remote.connected()){\n      // if there's any new data to be processed, do it\n      // what this means that any updates will only happen when we receive\n      // a complete data set. Until then, we're  just going to keep reading\n      // since that's perhaps more important.\n      if(remote.available()){\n        byte received = remote.read();\n        \n        if (received == -1){\n          continue;\n        }\n        \n        data = data << 8;\n        data += received;\n\n        numRecv++;\n\n        //further, only process if we have enough data\n        if (numRecv == dataSize){\n\n          uint8_t key = findKey(data);\n          uint8_t spec = findSpec(data);\n          uint8_t value = findValue(data);\n          \n          doUpdate(key, spec, value);\n\n          data = 0; // clears the data to be updated for next time\n          numRecv = 0; // resets the numRecv counter\n        }\n\n        else if (numRecv < dataSize){\n          // do nothing since we're just going to want to read for more imput\n        }\n      }\n    }\n    // shouldn't get here until the client terminates\n    remote.stop();\n  }\n\n  else {\n    Serial.println(\"no remote connected, retrying\");\n  }\n\n  delay(1000);\n}\n\nuint8_t findKey(unsigned short data){\n  unsigned short mask = 0xF800; //1111100000000000\n  unsigned short masked = data & mask;\n  masked = masked >> SPEC_SIZE + VALUE_SIZE;\n  return (uint8_t)masked;\n}\n\nuint8_t findSpec(unsigned short data){\n  unsigned short mask = 0x0700; //0000011100000000\n  unsigned short masked = data & mask;\n  masked =  masked >> VALUE_SIZE;\n  return (uint8_t)masked;\n}\n\nuint8_t findValue(unsigned short data){\n  unsigned short mask = 0x00FF; //0000000011111111\n  unsigned short masked = data & mask;\n  return (uint8_t)masked;\n}\n\nint dir(uint8_t spec){\n  if (spec == 1){\n    return FORWARD;\n  } else if (spec == -1){\n    return BACKWARD;\n  } else{\n    return RELEASE;\n  }\n}\n  \nvoid doUpdate(uint8_t key, uint8_t spec, uint8_t value){\n  Serial.print(\"Updating key \");\n  Serial.print(key);\n  Serial.print(\" for spec \");\n  Serial.print(spec);\n  Serial.print(\" with value \");\n  Serial.print(value);\n  Serial.println(\".\");\n\n  switch(key){\n    case DRIVE_MOTOR_DIR_KEY:\n    // need to set the value in array, set set speed again, and set dir\n      modules[spec].driveDir = value;\n      modules[spec].driveMotor->setSpeed(modules[spec].driveSpeed);\n      modules[spec].driveMotor->run(dir(modules[spec].driveDir));\n      break;\n    case DRIVE_MOTOR_SPEED_KEY:\n      modules[spec].driveSpeed = value;\n      modules[spec].driveMotor->setSpeed(modules[spec].driveSpeed);\n      modules[spec].driveMotor->run(dir(modules[spec].driveDir));\n      break;\n    case STEER_MOTOR_DIR_KEY:`\n      break;\n    case STEER_MOTOR_POSITION_KEY:\n      break;\n  }\n}\n\nint getPotPosition(uint8_t spec){\n  return analogRead(modules[spec].potPort);\n}\n",
+			"settings":
+			{
+				"buffer_size": 5464,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "/**********************************************************************************************\n * Arduino PID Library - Version 1.0.1\n * by Brett Beauregard <br3ttb@gmail.com> brettbeauregard.com\n *\n * This Library is licensed under a GPLv3 License\n **********************************************************************************************/\n\n#if ARDUINO >= 100\n  #include \"Arduino.h\"\n#else\n  #include \"WProgram.h\"\n#endif\n\n#include <PID_v1.h>\n\n/*Constructor (...)*********************************************************\n *    The parameters specified here are those for for which we can't set up \n *    reliable defaults, so we need to have the user set them.\n ***************************************************************************/\nPID::PID(double* Input, double* Output, double* Setpoint,\n        double Kp, double Ki, double Kd, int ControllerDirection)\n{\n    \n    myOutput = Output;\n    myInput = Input;\n    mySetpoint = Setpoint;\n    inAuto = false;\n    \n    PID::SetOutputLimits(0, 255);               //default output limit corresponds to \n                                                //the arduino pwm limits\n\n    SampleTime = 100;                           //default Controller Sample Time is 0.1 seconds\n\n    PID::SetControllerDirection(ControllerDirection);\n    PID::SetTunings(Kp, Ki, Kd);\n\n    lastTime = millis()-SampleTime;             \n}\n \n \n/* Compute() **********************************************************************\n *     This, as they say, is where the magic happens.  this function should be called\n *   every time \"void loop()\" executes.  the function will decide for itself whether a new\n *   pid Output needs to be computed.  returns true when the output is computed,\n *   false when nothing has been done.\n **********************************************************************************/ \nbool PID::Compute()\n{\n   if(!inAuto) return false;\n   unsigned long now = millis();\n   unsigned long timeChange = (now - lastTime);\n   if(timeChange>=SampleTime)\n   {\n      /*Compute all the working error variables*/\n      double input = *myInput;\n      double error = *mySetpoint - input;\n      ITerm+= (ki * error);\n      if(ITerm > outMax) ITerm= outMax;\n      else if(ITerm < outMin) ITerm= outMin;\n      double dInput = (input - lastInput);\n \n      /*Compute PID Output*/\n      double output = kp * error + ITerm- kd * dInput;\n      \n      if(output > outMax) output = outMax;\n      else if(output < outMin) output = outMin;\n      *myOutput = output;\n      \n      /*Remember some variables for next time*/\n      lastInput = input;\n      lastTime = now;\n      return true;\n   }\n   else return false;\n}\n\n\n/* SetTunings(...)*************************************************************\n * This function allows the controller's dynamic performance to be adjusted. \n * it's called automatically from the constructor, but tunings can also\n * be adjusted on the fly during normal operation\n ******************************************************************************/ \nvoid PID::SetTunings(double Kp, double Ki, double Kd)\n{\n   if (Kp<0 || Ki<0 || Kd<0) return;\n \n   dispKp = Kp; dispKi = Ki; dispKd = Kd;\n   \n   double SampleTimeInSec = ((double)SampleTime)/1000;  \n   kp = Kp;\n   ki = Ki * SampleTimeInSec;\n   kd = Kd / SampleTimeInSec;\n \n  if(controllerDirection ==REVERSE)\n   {\n      kp = (0 - kp);\n      ki = (0 - ki);\n      kd = (0 - kd);\n   }\n}\n  \n/* SetSampleTime(...) *********************************************************\n * sets the period, in Milliseconds, at which the calculation is performed  \n ******************************************************************************/\nvoid PID::SetSampleTime(int NewSampleTime)\n{\n   if (NewSampleTime > 0)\n   {\n      double ratio  = (double)NewSampleTime\n                      / (double)SampleTime;\n      ki *= ratio;\n      kd /= ratio;\n      SampleTime = (unsigned long)NewSampleTime;\n   }\n}\n \n/* SetOutputLimits(...)****************************************************\n *     This function will be used far more often than SetInputLimits.  while\n *  the input to the controller will generally be in the 0-1023 range (which is\n *  the default already,)  the output will be a little different.  maybe they'll\n *  be doing a time window and will need 0-8000 or something.  or maybe they'll\n *  want to clamp it from 0-125.  who knows.  at any rate, that can all be done\n *  here.\n **************************************************************************/\nvoid PID::SetOutputLimits(double Min, double Max)\n{\n   if(Min >= Max) return;\n   outMin = Min;\n   outMax = Max;\n \n   if(inAuto)\n   {\n       if(*myOutput > outMax) *myOutput = outMax;\n       else if(*myOutput < outMin) *myOutput = outMin;\n     \n       if(ITerm > outMax) ITerm= outMax;\n       else if(ITerm < outMin) ITerm= outMin;\n   }\n}\n\n/* SetMode(...)****************************************************************\n * Allows the controller Mode to be set to manual (0) or Automatic (non-zero)\n * when the transition from manual to auto occurs, the controller is\n * automatically initialized\n ******************************************************************************/ \nvoid PID::SetMode(int Mode)\n{\n    bool newAuto = (Mode == AUTOMATIC);\n    if(newAuto == !inAuto)\n    {  /*we just went from manual to auto*/\n        PID::Initialize();\n    }\n    inAuto = newAuto;\n}\n \n/* Initialize()****************************************************************\n *  does all the things that need to happen to ensure a bumpless transfer\n *  from manual to automatic mode.\n ******************************************************************************/ \nvoid PID::Initialize()\n{\n   ITerm = *myOutput;\n   lastInput = *myInput;\n   if(ITerm > outMax) ITerm = outMax;\n   else if(ITerm < outMin) ITerm = outMin;\n}\n\n/* SetControllerDirection(...)*************************************************\n * The PID will either be connected to a DIRECT acting process (+Output leads \n * to +Input) or a REVERSE acting process(+Output leads to -Input.)  we need to\n * know which one, because otherwise we may increase the output when we should\n * be decreasing.  This is called from the constructor.\n ******************************************************************************/\nvoid PID::SetControllerDirection(int Direction)\n{\n   if(inAuto && Direction !=controllerDirection)\n   {\n      kp = (0 - kp);\n      ki = (0 - ki);\n      kd = (0 - kd);\n   }   \n   controllerDirection = Direction;\n}\n\n/* Status Funcions*************************************************************\n * Just because you set the Kp=-1 doesn't mean it actually happened.  these\n * functions query the internal state of the PID.  they're here for display \n * purposes.  this are the functions the PID Front-end uses for example\n ******************************************************************************/\ndouble PID::GetKp(){ return  dispKp; }\ndouble PID::GetKi(){ return  dispKi;}\ndouble PID::GetKd(){ return  dispKd;}\nint PID::GetMode(){ return  inAuto ? AUTOMATIC : MANUAL;}\nint PID::GetDirection(){ return controllerDirection;}\n",
+			"settings":
+			{
+				"buffer_size": 7040,
+				"line_ending": "Unix",
+				"name": "/*************************************************"
+			}
+		},
+		{
+			"contents": "/**\n * Network communications handler, as a server.\n * Data will be received as such:\n *     Key   (1 Byte)\n *     Value (1 Byte)\n *     Key   (1 Byte)\n *     Value (1 Byte)\n *     ...\n * No error handling implemented\n */\n\n#ifndef NETWORK_H\n#define NETWORK_H\n\n#include <Bridge.h>\n#include <YunServer.h>\n#include <YunClient.h>\n\n#define PORT 6666\n#define MODULE_0_DRIVE_MOTOR_SPD 0xF0\n#define MODULE_0_DRIVE_MOTOR_DIR 0xF1\n#define MODULE_0_STEER_MOTOR_POS 0xF2\n#define MODULE_1_DRIVE_MOTOR_SPD 0xF3\n#define MODULE_1_DRIVE_MOTOR_DIR 0xF4\n#define MODULE_1_STEER_MOTOR_POS 0xF5\n#define MODULE_2_DRIVE_MOTOR_SPD 0xF6\n#define MODULE_2_DRIVE_MOTOR_DIR 0xF7\n#define MODULE_2_STEER_MOTOR_POS 0xF8\n#define MODULE_3_DRIVE_MOTOR_SPD 0xF9\n#define MODULE_3_DRIVE_MOTOR_DIR 0xFA\n#define MODULE_3_STEER_MOTOR_POS 0xFB\n\ntypedef struct network_module network;\nstruct network_module {\n    /**\n     * Server object on the Yun's side.\n     * Currently the Yun creates its own network, so a client needs to be\n     * connected to the local network in order to be able to access the server.\n     */\n    YunServer server;\n\n    /**\n     * Remote client object, on the controller side.\n     * Currently the client must be on the same local network as the server\n     * for the connection to work.\n     */\n    YunClient remote;\n\n    /**\n     * Value showing whether or not a new data piece is available.\n     * This is set to true whenever a complete data pair is received, and \n     * set to false again whenever the server is in the middle of crafting a\n     * pair.\n     */\n    bool data_available;\n\n    /**\n     * Key for the received data pair.\n     */\n    byte key;\n\n    /**\n     * Value for the received data pair.\n     */\n    byte value;\n\n    /**\n     * Whether or not a key has been received.\n     * If both key and value are received, data_available is marked as true\n     * and both key_received and value_received are reset.\n     */    \n    bool key_received;\n\n    /**\n     * Whether or not a value has been received.\n     * If both key and value are received, data_available is marked as true\n     * and both key_received and value_received are reset.\n     */\n    bool value_received;\n\n    /**\n     * Whether or not a client is connected.\n     */\n    bool (*connected)(network*);\n\n    /**\n     * Whether or not a new piece of data is available.\n     */\n    bool (*available)(network*);\n\n    /**\n     * Accepts a client attempting to connect, if any.\n     */\n    void (*accept)(network*);\n\n    /**\n     * Receives the next piece of data from the stream, if any.\n     */\n    void (*get_next)(network*);\n};\n\nnetwork* network_init();\nbool connected(network *net);\nbool available(network *net);\nvoid accept(network *net);\nvoid get_next(network *net);\n\n#endif\n",
+			"file": "network.h",
+			"file_size": 2799,
+			"file_write_time": 130737132849897522,
+			"settings":
+			{
+				"buffer_size": 2739,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "module.h",
+			"settings":
+			{
+				"buffer_size": 6384,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "PID.h",
+			"settings":
+			{
+				"buffer_size": 182,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 117.0,
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"package ",
+				"Package Control: Add Repository"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git comm",
+				"Git: Quick Commit"
+			],
+			[
+				"gitc",
+				"Git: Commit"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"File: New View into File"
+			],
+			[
+				"toggle ",
+				"View: Toggle Menu"
+			],
+			[
+				"tog",
+				"View: Toggle Status Bar"
+			],
+			[
+				"to",
+				"View: Toggle Minimap"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"instal	",
+				"Package Control: Install Package"
+			],
+			[
+				"package control: inst	",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"togglemenu",
+			"toggle_menu",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": true,
+		"show_open_files": false,
+		"show_tabs": true,
+		"side_bar_visible": false,
+		"status_bar_visible": true
+	},
+	"expanded_folders":
+	[
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/Arduino",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/Old Versions",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/PC",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/PC/Python"
+	],
+	"file_history":
+	[
+		"/home/mint/Dropbox/College/Freshman Year/15-112 CA S15/TP/TP1/katheric@andrew.cmu.edu_1_handin/Code/code artifacts.py",
+		"/home/mint/Dropbox/College/Freshman Year/15-112 CA S15/TP/TP1/rohanmeh@andrew.cmu.edu_1_handin/RohanTermProjectD1/Panda3D_Practice.py",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/Arduino/PID.c",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/Arduino/network.c",
+		"/media/mint/MYLINUXLIVE/logs/2015-03-21-07-12-46/sensors.txt",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/PC/Python/code.py",
+		"/home/mint/Dropbox/College/Freshman Year/15-112/Week 9/hw9s2.py",
+		"/home/mint/Dropbox/College/Freshman Year/15-112/Week 9/hw9ABC.py",
+		"/home/mint/Downloads/tetwut.py",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/Arduino/module.h",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/Arduino/module.c",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/Arduino/ArduinoClientBasedController.ino",
+		"/home/mint/Downloads/pgl-2.3.0/INSTALL",
+		"/home/mint/Dropbox/College/Freshman Year/15-112 CA S15/Grading/hw6SubmissionsForGrading/hw6cSubmissionsWithDriver/lelkin@andrew.cmu.edu_1_handin.py",
+		"/home/mint/Downloads/oneLineChallenge.py",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/Arduino/ArduinoPotsTest.ino",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/Arduino/ArduinoServerSRC (Vasu Agrawal's conflicted copy 2015-02-25).ino",
+		"/home/mint/Downloads/mergesort.py",
+		"/home/mint/Dropbox/College/Freshman Year/15-112 CA S15/blank.py",
+		"/afs/andrew.cmu.edu/usr11/vasua/private/15122/HW/clac-handout/clac.c0",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/Old Versions/sockets test.py",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/Arduino/ArduinoServerSRC.ino",
+		"/home/mint/Desktop/test.py",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/Old Versions/testGui.py",
+		"/home/mint/Dropbox/College/Freshman Year/15-112 CA S15/Grading/hw4SubmissionsForStyle/commentsDeadCode/vasua/melodyt@andrew.cmu.edu_6_handin.py",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/ArduinoServerSRC.ino",
+		"/afs/andrew.cmu.edu/usr11/vasua/private/15122/HW/HW4/doslingos-handout/doslingos-test.c0",
+		"/afs/andrew.cmu.edu/usr11/vasua/private/15122/HW/HW4/doslingos-handout/doslingos.c0",
+		"/afs/andrew.cmu.edu/usr11/vasua/private/15122/HW/HW4/doslingos-handout/analysis.c0",
+		"/home/mint/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/afs/andrew.cmu.edu/usr11/vasua/private/15122/HW/HW4/doslingos-handout/mergesort.c0",
+		"/home/mint/Documents/th2015/tartanHacks2015/test.py",
+		"/home/mint/Documents/th2015/tartanHacks2015/site/imageProcessor.py",
+		"/home/mint/Documents/th2015/tartanHacks2015/site/server.py",
+		"/home/mint/Documents/th2015/tartanHacks2015/site/cardsgame.py",
+		"/home/mint/Documents/th2015/tartanHacks2015/site/gameManager.py",
+		"/home/mint/Documents/th2015/tartanHacks2015/site/static/main.css",
+		"/home/mint/Documents/th2015/tartanHacks2015/site/ripText.py",
+		"/home/mint/Documents/th2015/tartanHacks2015/testImages/ripText.py",
+		"/home/mint/Documents/th2015/tartanHacks2015/testImages/findGreyBar.py",
+		"/home/mint/Documents/th2015/tartanHacks2015/pysnap/setup.py",
+		"/home/mint/Documents/th2015/tartanHacks2015/testImages/tess.py",
+		"/home/mint/Documents/th2015/tartanHacks2015/testImages/testWhite.py",
+		"/home/mint/Downloads/removeLines.py",
+		"/home/mint/Dropbox/College/Freshman Year/15-112 CA S15/Grading/hw3SubmissionsForStyle/magicNumbersVarNames/vasua/MODIFIED_lelkin@andrew.cmu.edu_4_handin.py",
+		"/home/mint/Dropbox/College/Freshman Year/15-112 CA S15/Grading/hw3SubmissionsForStyle/magicNumbersVarNames/vasua/MODIFIED_cstiles@andrew.cmu.edu_7_handin.py",
+		"/home/mint/Dropbox/College/Freshman Year/15-112 CA S15/Grading/hw3SubmissionsForStyle/magicNumbersVarNames/vasua/MODIFIED_ajwu@andrew.cmu.edu_7_handin.py",
+		"/home/mint/Dropbox/College/Freshman Year/15-112 CA S15/Grading/hw3SubmissionsForStyle/magicNumbersVarNames/removeLines.py",
+		"/home/mint/Dropbox/College/Freshman Year/15-112 CA S15/Grading/hw3SubmissionsForStyle/magicNumbersVarNames/vasua/MODIFIED_afan@andrew.cmu.edu_5_handin.py",
+		"/home/mint/Dropbox/College/Freshman Year/15-112 CA S15/Grading/hw3SubmissionsForStyle/magicNumbersVarNames/vasua/afan@andrew.cmu.edu_5_handin.py",
+		"/home/mint/Desktop/CV/current_src/GesturesApi.py",
+		"/home/mint/Dropbox/College/Freshman Year/15-112 CA S15/Grading/hw3SubmissionsForStyle/magicNumbersVarNames/vasua/anniez@andrew.cmu.edu_9_handin.py",
+		"/home/mint/Dropbox/College/Freshman Year/15-112 CA S15/Grading/hw3SubmissionsForStyle/magicNumbersVarNames/vasua/MODIFIED_MODIFIED_hebryant@andrew.cmu.edu_3_handin.py",
+		"/home/mint/Dropbox/College/Freshman Year/15-112 CA S15/Grading/hw3SubmissionsForStyle/magicNumbersVarNames/vasua/MODIFIED_hebryant@andrew.cmu.edu_3_handin.py",
+		"/home/mint/Dropbox/College/Freshman Year/15-112 CA S15/Grading/hw3SubmissionsForStyle/magicNumbersVarNames/vasua/test.py",
+		"/home/mint/Downloads/magicNumbers.py",
+		"/afs/andrew.cmu.edu/usr11/vasua/private/15122/HW/HW3/images-handout/imageutil.c0",
+		"/afs/andrew.cmu.edu/usr11/vasua/private/15122/HW/HW3/images-handout/rotate.c0",
+		"/afs/andrew.cmu.edu/usr11/vasua/private/15122/HW/HW3/images-handout/mask.c0",
+		"/afs/andrew.cmu.edu/usr11/vasua/private/15122/HW/HW3/images-handout/images-test.c0",
+		"/afs/andrew.cmu.edu/usr11/vasua/private/15122/HW/HW2/pixels-handout/README.txt",
+		"/afs/andrew.cmu.edu/usr11/vasua/private/15122/HW/HW2/pixels-handout/tasks.c0",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/webswerve.py",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/F310_Gamepad_Parser-master/parser_main.py",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/gamepadTest.py",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/sockettest/sockettest.ino",
+		"/home/mint/Dropbox/College/Freshman Year/15-112 CA S15/Recitation Week 2.py",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/sockets test.py",
+		"/home/mint/Downloads/F310_Gamepad_Parser-master/gui_main.py",
+		"/home/mint/Downloads/F310_Gamepad_Parser-master/parser_main.py",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/testGui.py",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/lib/gamepad.py",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/lib/__init__.py",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/python-gamepad-master/setup.py",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/python-gamepad-master/pygamepad/gamepad.py",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/python-gamepad-master/pygamepad/__init__.py",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/sketch_jan16a.ino",
+		"/home/mint/Downloads/hw1Submissions/aslee1@andrew.cmu.edu_8_handin.py",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/keyTest.py",
+		"/home/mint/Dropbox/College/Freshman Year/15-112/Week 10/eventBasedAnimationClass.py",
+		"/home/mint/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/mint/.config/sublime-text-3/Packages/User/python-with-ui-options.py",
+		"/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code/README.md",
+		"/home/mint/Desktop/CV/current_src/testImplementation.py",
+		"/home/mint/Desktop/CV/current_src/gesture.py",
+		"/home/mint/Desktop/gobble-gobble.py",
+		"/home/mint/Desktop/CV/current_src/eventBasedAnimationClass.py",
+		"/home/mint/Desktop/CV/current_src/defaultGesturesLoader.py",
+		"/home/mint/Desktop/CV/README.md",
+		"/home/mint/Downloads/main.S (3)",
+		"/home/mint/Downloads/main.S (2)",
+		"/home/mint/Desktop/CV/current_src/Gesture_data.txt",
+		"/home/mint/Desktop/CV/current_src/Somefile.txt",
+		"/home/mint/Dropbox/College/Freshman Year/15-112/test.py",
+		"/home/mint/Desktop/CV/old/inscribed.py",
+		"/home/mint/Desktop/CV/GesturesApi.py",
+		"/home/mint/Desktop/CV/testImplementation.py",
+		"/home/mint/Desktop/CV/bgSub.py",
+		"/home/mint/Desktop/CV/updates2.txt",
+		"/home/mint/Desktop/CV/line.py",
+		"/home/mint/Desktop/inscribed.py",
+		"/home/mint/Desktop/CV/gesture.py",
+		"/home/mint/Desktop/CV/defaultGesturesLoader.py",
+		"/home/mint/Desktop/nptest.py",
+		"/home/mint/Desktop/testing.py",
+		"/home/mint/Desktop/CV/Somefile.txt",
+		"/home/mint/Desktop/CV/sample_src/tkinterCVSample.py",
+		"/home/mint/Desktop/CV/sample_src/bgExtractionRunningAvg.py",
+		"/home/mint/Desktop/CV/sample_src/opencvBgSub.py",
+		"/home/mint/Desktop/CV/gestureData.txt",
+		"/home/mint/Dropbox/College/Freshman Year/15-112/Week 11/steganographyEncoder.py",
+		"/home/mint/Desktop/CV/binSearch.py",
+		"/home/mint/Dropbox/College/Freshman Year/15-112/file.txt",
+		"/home/mint/Dropbox/College/Freshman Year/15-112/Week 11/steganographyEncoder.py.desktop",
+		"/home/mint/Desktop/CV/iftheqhar.py",
+		"/home/mint/Downloads/main.S",
+		"/home/mint/Dropbox/College/Freshman Year/15-112/Week 11/MonteCarlo.py",
+		"/home/mint/.config/sublime-text-3/Packages/User/Distraction Free.sublime-settings",
+		"/home/mint/.config/sublime-text-3/Packages/GitGutter/GitGutter.sublime-settings",
+		"/home/mint/.config/sublime-text-3/Packages/User/GitGutter.sublime-settings",
+		"/home/mint/Desktop/CV/version2.py",
+		"/home/mint/Desktop/opencv-3.0.0-alpha/samples/python2/edge.py",
+		"/home/mint/Desktop/CV/handTest1.py",
+		"/home/mint/Desktop/RoboBuggy/arduino_src/RadioBuggyMega/pinreceiver.cpp",
+		"/home/mint/Desktop/CV/timesheet.ods",
+		"/home/mint/Dropbox/College/Freshman Year/15-112/Week 10/hw10.py",
+		"/home/mint/Desktop/recursionQuiz.py",
+		"/home/mint/Desktop/recursionQuiz"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"POSITION",
+			"SPEED",
+			"_KEY",
+			"net_connection",
+			"this",
+			"pid",
+			"test",
+			"network*",
+			"network *",
+			"network*",
+			".",
+			"this",
+			"string",
+			"m->",
+			"steer_pos",
+			"[description]",
+			"is_sorted",
+			"black",
+			"judge",
+			"roundstart",
+			"processed",
+			"detector",
+			"currentjudge",
+			"api",
+			"self.winner",
+			"snaps",
+			"prompt",
+			"sendsnap",
+			"proceedToJudging",
+			"judging",
+			"process",
+			"judg",
+			"self.roundstage",
+			"self.entries",
+			"self entries",
+			"snapchat",
+			"judg",
+			"showImage",
+			"Empty",
+			"processedSnaps",
+			"pollAndFetchSnaps",
+			"process",
+			"self.judge",
+			"true",
+			"numCycles",
+			"processSnaps",
+			"polland",
+			"args",
+			"entries",
+			"Entries",
+			"checkForAccepts",
+			"friendplayers",
+			"thread",
+			"try",
+			"sendInvitationSnaps",
+			"run",
+			"str(number)",
+			"start",
+			"thresholded",
+			"testImage",
+			"show",
+			"lineCounter",
+			"checkWidth",
+			"(p)",
+			"p",
+			"estimated",
+			"sparky",
+			"spec",
+			"_inv",
+			"inv",
+			"binary",
+			"for",
+			"self.defects",
+			"diagonal",
+			"..",
+			"smiley",
+			"drawLukas",
+			"drawSmiley",
+			"toggleLukas",
+			"toggleSmiley",
+			"radius",
+			"image",
+			"Image",
+			"image",
+			"y ",
+			"y",
+			"x",
+			"radius",
+			"imageHandles",
+			"inv",
+			"almostEqual",
+			"img",
+			"-",
+			"getpoint",
+			"-",
+			"sorted",
+			"analyze",
+			"upscaledCenter",
+			"-",
+			"reductionCenter",
+			"findHullAndDefects",
+			"setContours",
+			"findHandContour",
+			"-",
+			"itertools",
+			"itertols",
+			")\n",
+			"print",
+			"stationary",
+			"trim",
+			"# p",
+			"trim",
+			"distance",
+			"handMoment",
+			"handCenterPositions",
+			"determine",
+			")",
+			"(",
+			"insc",
+			"handHeight",
+			"print",
+			"dist_max",
+			"dist_min",
+			"self",
+			"norm",
+			"self.handContour[k][0]",
+			"self.handContour[j][0]",
+			"self.handContour[i][0]"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "/home/mint/Dropbox/College/Freshman Year/Web_controlled_swerve_drive_robot/Code"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/home/mint/Dropbox/College/Freshman Year/15-112 CA S15"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/afs/andrew.cmu.edu/usr11/vasua/private/15122/HW"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/home/mint/Documents/th2015/tartanHacks2015"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/home/mint/Desktop/CV"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/afs/andrew.cmu.edu/usr11/vasua/private"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "module.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4566,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4491,
+								4491
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "network.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2005,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								549,
+								549
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Arduino.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3498,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3130,
+								3130
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include <module.h>",
+							"syntax": "Packages/User/Stino/Arduino.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 743.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "ArduinoServerSRC.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5834,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1963,
+								1963
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/Stino/Arduino.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1080.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "ArduinoPotsTest.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4948,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3844,
+								3844
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/Stino/Arduino.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 1620.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "ArduinoSteerMotorTest.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1512,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								306,
+								306
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/Stino/Arduino.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5464,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2260,
+								2260
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/Stino/Arduino.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7040,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5074,
+								5074
+							]
+						],
+						"settings":
+						{
+							"auto_name": "/*************************************************",
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1800.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 8,
+					"file": "network.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2739,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								794,
+								794
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1395.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "module.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6384,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5785,
+								5785
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 45.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "PID.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								182,
+								182
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 60.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				2
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.636501516684,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.1421646924.2081268":
+	{
+		"height": 100.0
+	},
+	"output.exec":
+	{
+		"height": 189.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 105.0
+	},
+	"project": "",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 182.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
