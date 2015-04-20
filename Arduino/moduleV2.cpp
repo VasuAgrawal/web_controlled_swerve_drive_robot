@@ -1,32 +1,30 @@
 #include "moduleV2.h"
 
-Module::Module() {
-    //leave everything uninitialized
-}
-
 Module::Module(uint8_t pot_port, Adafruit_MotorShield *shield,
-    uint8_t steer_port, uint16_t steer_home_value, uint16_t steer_min_value,
-    uint16_t steer_max_value, uint8_t drive_port) {
+    uint8_t steer_port, uint16_t steer_home_value, uint16_t steer_min_value, uint16_t steer_max_value, uint8_t drive_port) {
     this->pot_port = pot_port;
     this->shield = shield;
     this->steer_port = steer_port;
     this->steer_home_value = steer_home_value;
     this->steer_min_value = steer_min_value;
     this->steer_max_value = steer_max_value;
-    this->steer_pos = this->steer_home_value;
+    this->steer_pos = (double)(signed int)(this->steer_home_value);
     this->steer_motor = this->shield->getMotor(this->steer_port);
-    //this->steer_PID = PID();
+    this->PID_steer_input = read_steer_pot();
     this->PID_steer_output = this->steer_pos;
+    this->steer_PID = PID_Improved(&PID_steer_input, &PID_steer_output,
+        &steer_pos, 2, 0, 0); //tuning params
+    steer_PID.set_error_threshold(5);
     this->drive_port = drive_port;
     this->drive_dir = 0; // Don't move originally.
     this->drive_speed = 0; // Again, let's not move originally.
     this->drive_motor = this->shield->getMotor(this->drive_port);
     //this->drive_PID = PID();
-    this->PID_drive_output = this->drive_speed;
+    //this->PID_drive_output = this->drive_speed;
 }
 
-uint8_t read_steer_pot() {
-    return analogRead(pot_port) >> 4;
+uint8_t Module::read_steer_pot() {
+    return analogRead(pot_port) >> 2;
 }
 
 void Module::set_steer_pos(uint16_t steer_pos) {
@@ -71,6 +69,7 @@ void Module::go_home() {
 void Module::error() {
     go_home();
     stop_driving();
+    Serial.println("WE HAVE AN ERROR! :(");
     return;
 }
 
@@ -79,10 +78,14 @@ bool Module::safety_check() {
     return steer_min_value <= current && current <= steer_max_value;
 }
 
+double Module::get_steer_PID_out() {
+    return PID_steer_output;
+}
+
 void Module::update() {
     //Begin with a safety check
-    if (safety_check(m)) {
-        //PID update
+    if (safety_check()) {
+        steer_PID.compute();
         //steer update, assumes negative PID is backward
         if (PID_steer_output < 0) {
             steer_motor->run(BACKWARD);
@@ -96,15 +99,15 @@ void Module::update() {
         }
 
         //drive update, assumes negative PID is backward
-        if (PID_drive_output < 0) {
+        if (drive_dir < 0) {
             drive_motor->run(BACKWARD);
-            drive_motor->setSpeed(abs(PID_drive_output));
-        } else if (PID_drive_output == 0) {
+            drive_motor->setSpeed(abs(drive_speed));
+        } else if (drive_dir == 0) {
             drive_motor->run(RELEASE);
             drive_motor->setSpeed(0);
         } else {
             drive_motor->run(FORWARD);
-            drive_motor->setSpeed(PID_drive_output);
+            drive_motor->setSpeed(drive_speed);
         }
     } else {
         error();

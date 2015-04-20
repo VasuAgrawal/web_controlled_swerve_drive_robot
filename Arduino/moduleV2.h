@@ -3,15 +3,14 @@
 
 #include <Adafruit_MotorShield.h>
 #include "utility/Adafruit_PWMServoDriver.h"
+#include "PID.h"
 
 class Module {
     public:
-        Module();
-        Module(uint8_t pot_port, uint8_t read_reduce_factor, 
-            uint16_t read_min_value, uint16_t read_max_value,
-            Adafruit_MotorShield *shield, uint8_t steer_port,
-            uint16_t steer_home_value, uint16_t steer_min_value,
-            uint16_t steer_max_value, uint8_t drive_port);
+        Module(uint8_t pot_port, Adafruit_MotorShield *shield,
+            uint8_t steer_port, uint16_t steer_home_value,
+            uint16_t steer_min_value, uint16_t steer_max_value,
+            uint8_t drive_port);
         void set_steer_pos(uint16_t steer_pos);
         void set_drive_dir(int8_t drive_dir);
         void set_drive_speed(uint8_t drive_speed);
@@ -19,8 +18,8 @@ class Module {
         int8_t get_drive_dir();
         uint8_t get_drive_speed();
         void update();
-        uint16_t read_steer_pot_by_factor();
-        uint16_t read_steer_pot();
+        uint8_t read_steer_pot();
+        double get_steer_PID_out();
 
     private:
         void go_home();
@@ -85,7 +84,7 @@ class Module {
          * possible. Will default to home value at start. Will be home value
          * if a value outside provided safe range is given.
          */
-        uint16_t steer_pos; 
+        double steer_pos; 
         /**
          * Adafruit_DCMotor object for the steer motor.
          * Obtained automatically based on the given steer_port and *shield. 
@@ -95,13 +94,18 @@ class Module {
          * PID controller for the steering motor.
          * Ensures that steering motor will arrive at necesssary position.
          */
-    //    PID steer_PID;
+        PID_Improved steer_PID;
 
+        /**
+         * PID controller steer pos input.
+         * Holds the input value for the steering position from the PID loop.
+         */
+        double PID_steer_input;
         /**
          * PID controller steer pos output.
          * Holds the output value for the steering position from the PID loop.
          */
-        int16_t PID_steer_output;
+        double PID_steer_output;
 
         /**
          * Motor shield port that the drive motor is connected to.

@@ -35,32 +35,42 @@ bool data_available;
 //Shields
 Adafruit_MotorShield shield1 = Adafruit_MotorShield(0x60); // bottom shield
 Adafruit_MotorShield shield2 = Adafruit_MotorShield(0x61); // top shield
-//Modules
-Module modules[4];
 //Server
 YunServer server(PORT);
 
+//Modules
+Module modules[4] = {
+    Module(2, &shield2, 2, 450 / 4, 200 / 4, 800 / 4, 1),
+    Module(3, &shield1, 2, 500 / 4, 200 / 4, 800 / 4, 1),
+    Module(4, &shield1, 3, 483 / 4, 200 / 4, 800 / 4, 4),
+    Module(5, &shield2, 3, 480 / 4, 200 / 4, 800 / 4, 4)
+};
+
 void setup(){
     // Lots of magic numbers. Sorry.
-    modules[0] = Module(0, &shield2, 2, 450, 200, 800, 1);
-    modules[1] = Module(1, &shield1, 2, 500, 200, 800, 1);
-    modules[2] = Module(2, &shield1, 3, 483, 200, 800, 4);
-    modules[3] = Module(3, &shield2, 3, 480, 200, 800, 4);
     Serial.begin(115200);
     Bridge.begin();
 
-    Serial.printf("Module0 -- DriveSpeed: %u DriveDir: %i SteerPos: %u\n",
-        modules[0].get_drive_speed(), modules[0].get_drive_dir(),
-        modules[0].get_steer_pos());
-    Serial.printf("Module1 -- DriveSpeed: %u DriveDir: %i SteerPos: %u\n",
-        modules[1].get_drive_speed(), modules[1].get_drive_dir(),
-        modules[1].get_steer_pos());
-    Serial.printf("Module2 -- DriveSpeed: %u DriveDir: %i SteerPos: %u\n",
-        modules[2].get_drive_speed(), modules[2].get_drive_dir(),
-        modules[2].get_steer_pos());
-    Serial.printf("Module3 -- DriveSpeed: %u DriveDir: %i SteerPos: %u\n",
-        modules[3].get_drive_speed(), modules[3].get_drive_dir(),
-        modules[3].get_steer_pos());
+    Serial.printf("Module0 -- DriveSpeed: %u DriveDir: %i SteerPos: %u\n"
+        "SteerPot: %u PIDSteerOutput: %d\n", modules[0].get_drive_speed(),
+        modules[0].get_drive_dir(), modules[0].get_steer_pos(),
+        modules[0].read_steer_pot(), modules[0].get_steer_PID_out());
+    delay(10);
+    Serial.printf("Module1 -- DriveSpeed: %u DriveDir: %i SteerPos: %u\n"
+        "SteerPot: %u PIDSteerOutput: %d\n", modules[1].get_drive_speed(),
+        modules[1].get_drive_dir(), modules[1].get_steer_pos(),
+        modules[1].read_steer_pot(), modules[1].get_steer_PID_out());
+    delay(10);
+    Serial.printf("Module2 -- DriveSpeed: %u DriveDir: %i SteerPos: %u\n"
+        "SteerPot: %u PIDSteerOutput: %d\n", modules[2].get_drive_speed(),
+        modules[2].get_drive_dir(), modules[2].get_steer_pos(),
+        modules[2].read_steer_pot(), modules[2].get_steer_PID_out());
+    delay(10);
+    Serial.printf("Module3 -- DriveSpeed: %u DriveDir: %i SteerPos: %u\n"
+        "SteerPot: %u PIDSteerOutput: %d\n", modules[3].get_drive_speed(),
+        modules[3].get_drive_dir(), modules[3].get_steer_pos(),
+        modules[3].read_steer_pot(), modules[3].get_steer_PID_out());
+    delay(10);
 
 
     server.noListenOnLocalhost();
@@ -135,20 +145,34 @@ void loop(){
                 default:
                     break;
                 }
-
-                Serial.printf("Module0 -- DriveSpeed: %u DriveDir: %i SteerPos: %u\n",
-                    modules[0].get_drive_speed(), modules[0].get_drive_dir(),
-                    modules[0].get_steer_pos());
-                Serial.printf("Module1 -- DriveSpeed: %u DriveDir: %i SteerPos: %u\n",
-                    modules[1].get_drive_speed(), modules[1].get_drive_dir(),
-                    modules[1].get_steer_pos());
-                Serial.printf("Module2 -- DriveSpeed: %u DriveDir: %i SteerPos: %u\n",
-                    modules[2].get_drive_speed(), modules[2].get_drive_dir(),
-                    modules[2].get_steer_pos());
-                Serial.printf("Module3 -- DriveSpeed: %u DriveDir: %i SteerPos: %u\n",
-                    modules[3].get_drive_speed(), modules[3].get_drive_dir(),
-                    modules[3].get_steer_pos());
             }
+
+//            for (int i = 0; i < 4; i++) {
+//                modules[i].update();
+//            }
+
+            Serial.printf("Module0 -- DriveSpeed: %u DriveDir: %i SteerPos: %u\n"
+                "SteerPot: %u PIDSteerOutput: %d\n", modules[0].get_drive_speed(),
+                modules[0].get_drive_dir(), modules[0].get_steer_pos(),
+                modules[0].read_steer_pot(), modules[0].get_steer_PID_out());
+            delay(50);
+            Serial.printf("Module1 -- DriveSpeed: %u DriveDir: %i SteerPos: %u\n"
+                "SteerPot: %u PIDSteerOutput: %d\n", modules[1].get_drive_speed(),
+                modules[1].get_drive_dir(), modules[1].get_steer_pos(),
+                modules[1].read_steer_pot(), modules[1].get_steer_PID_out());
+            delay(50);
+            Serial.printf("Module2 -- DriveSpeed: %u DriveDir: %i SteerPos: %u\n"
+                "SteerPot: %u PIDSteerOutput: %d\n", modules[2].get_drive_speed(),
+                modules[2].get_drive_dir(), modules[2].get_steer_pos(),
+                modules[2].read_steer_pot(), modules[2].get_steer_PID_out());
+            delay(50);
+            Serial.printf("Module3 -- DriveSpeed: %u DriveDir: %i SteerPos: %u\n"
+                "SteerPot: %u PIDSteerOutput: %d\n", modules[3].get_drive_speed(),
+                modules[3].get_drive_dir(), modules[3].get_steer_pos(),
+                modules[3].read_steer_pot(), modules[3].get_steer_PID_out());
+            delay(50);
+
+
         }
     }
     delay(1000);
